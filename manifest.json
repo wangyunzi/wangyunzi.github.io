@@ -1,9 +1,9 @@
 {
-    "name": "Hugo Theme MemE",
-    "short_name": "MemE",
+    "name": "长街短梦",
+    "short_name": "梦迷",
     "icons": [
         {
-            "src": "./icons/android-chrome-512x512.png",
+            "src": "./icons/avatar.jpg",
             "sizes": "512x512",
             "type": "image/png"
         }
