@@ -7,34 +7,34 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Hugo 主题 MemE</title>
-        <link>https://example.com/</link>
-        <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
+        <title>长街短梦</title>
+        <link>https://wangyunzi.github.io/</link>
+        <description>满身风雨我从海上来</description>
         <generator>Hugo 0.96.0 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
         
-            <managingEditor>reuixiy@gmail.com (reuixiy)</managingEditor>
+            <managingEditor>xueq695@gmail.com (wangyunzi)</managingEditor>
         
         
-            <webMaster>reuixiy@gmail.com (reuixiy)</webMaster>
+            <webMaster>xueq695@gmail.com (wangyunzi)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 11 May 2022 12:35:57 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 11 May 2022 14:18:17 &#43;0800</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss&#43;xml" href="https://example.com/rss.xml" />
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://wangyunzi.github.io/rss.xml" />
         
         
             <item>
                 <title>Hello World</title>
-                <link>https://example.com/posts/hello-world/</link>
-                <guid isPermaLink="true">https://example.com/posts/hello-world/</guid>
+                <link>https://wangyunzi.github.io/posts/hello-world/</link>
+                <guid isPermaLink="true">https://wangyunzi.github.io/posts/hello-world/</guid>
                 <pubDate>Tue, 10 May 2022 22:27:06 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (reuixiy)</author>
+                    <author>xueq695@gmail.com (wangyunzi)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
