@@ -3,7 +3,7 @@
     "short_name": "梦迷",
     "icons": [
         {
-            "src": "./icons/avatar.jpg",
+            "src": "./icons/头像.jpg",
             "sizes": "512x512",
             "type": "image/png"
         }
