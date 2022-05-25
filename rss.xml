@@ -10,7 +10,7 @@
         <title>长街短梦</title>
         <link>https://wangyunzi.github.io/</link>
         <description>假若人生如一条长街，我就不愿意错过这街上的每一处细小的风景。 假若人生不过是长街上的一个短梦，我愿意把这短梦做的生机盎然。</description>
-        <generator>Hugo 0.96.0 https://gohugo.io/</generator>
+        <generator>Hugo 0.99.1 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,10 +23,44 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sun, 15 May 2022 01:30:36 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 25 May 2022 22:26:48 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://wangyunzi.github.io/rss.xml" />
         
+        
+            <item>
+                <title>我的hugo搭建博客历程（一）</title>
+                <link>https://wangyunzi.github.io/posts/%E6%88%91%E7%9A%84hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B%E4%B8%80/</link>
+                <guid isPermaLink="true">https://wangyunzi.github.io/posts/%E6%88%91%E7%9A%84hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B%E4%B8%80/</guid>
+                <pubDate>Sun, 22 May 2022 09:36:08 &#43;0800</pubDate>
+                
+                    <author>xueq695@gmail.com (wangyunzi)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description></description>
+                
+                
+                
+                    
+                    
+                    
+                        
+                        
+                        
+                            
+                                <category domain="https://wangyunzi.github.io/posts/">posts\</category>
+                            
+                        
+                    
+                
+                
+                
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Hello World</title>

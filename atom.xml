@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">长街短梦</title>
     <subtitle type="html">假若人生如一条长街，我就不愿意错过这街上的每一处细小的风景。 假若人生不过是长街上的一个短梦，我愿意把这短梦做的生机盎然。</subtitle>
-    <updated>2022-05-15T01:30:36&#43;08:00</updated>
+    <updated>2022-05-25T22:26:48&#43;08:00</updated>
     <id>https://wangyunzi.github.io/</id>
     <link rel="alternate" type="text/html" href="https://wangyunzi.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://wangyunzi.github.io/atom.xml" />
@@ -15,7 +15,44 @@
                 <email>xueq695@gmail.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    <generator uri="https://gohugo.io/" version="0.96.0">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.99.1">Hugo</generator>
+        <entry>
+            <title type="text">我的hugo搭建博客历程（一）</title>
+            <link rel="alternate" type="text/html" href="https://wangyunzi.github.io/posts/%E6%88%91%E7%9A%84hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B%E4%B8%80/" />
+            <id>https://wangyunzi.github.io/posts/%E6%88%91%E7%9A%84hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B%E4%B8%80/</id>
+            <updated>2022-05-22T09:36:08&#43;08:00</updated>
+            <published>2022-05-22T09:36:08&#43;08:00</published>
+            <author>
+                    <name>wangyunzi</name>
+                    <uri>https://wangyunzi.github.io</uri>
+                    <email>xueq695@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"></summary>
+            
+                <content type="html"></content>
+            
+            
+            
+                
+                
+                
+                    
+                    
+                    
+                        
+                            <category scheme="https://wangyunzi.github.io/posts/" term="posts\" label="posts\" />
+                        
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Hello World</title>
             <link rel="alternate" type="text/html" href="https://wangyunzi.github.io/posts/hello-world/" />
