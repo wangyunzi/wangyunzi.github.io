@@ -1,0 +1,42 @@
+---
+layout: default
+home: true
+---
+
+<div class="home">
+    <ul class="post-list">
+        {% if site.pagination %}
+            {% assign source = paginator.posts %}
+        {% else %}
+            {% assign source = site.posts %}
+        {% endif %}
+
+        {% for post in source %}
+        <li>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-list-link">
+                <div class="post-list-info">
+                    <h2 class="post-list-title">{{ post.title }}</h2>
+                    <span class="post-list-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+                </div>
+            </a>
+
+            {% if post.thumb %}
+                <img src="{{ post.thumb | prepend: site.baseurl }}" class="post-list-thumb" alt="{{ post.title }}" />
+            {% else %}
+                <!-- Use a random default thumbnail if post.thumb is not set -->
+                {% assign random_thumb = site.default_thumbnails | sample %}
+                <img src="{{ random_thumb | prepend: site.baseurl }}" class="post-list-thumb" alt="Default thumbnail" />
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Uncomment the section below to enable RSS feed subscription -->
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- <p class="rss-subscribe">
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+            Subscribe via RSS
+            <i class="icon ion-social-rss"></i>
+        </a>
+    </p> -->
+</div>

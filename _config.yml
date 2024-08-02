@@ -1,0 +1,66 @@
+# Site settings
+name: 长街短梦
+description: "A minimal, single-column Jekyll theme that provides an immersive read experience for your readers"
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+# theme: travelogue
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+compress_html:
+  blanklines: true  #其会默认把所有的换行都压缩成一行。因为毕竟大部分 html 语法都不依赖换行。
+highlight:
+  theme: "monokai"  # 或你喜欢的其他主题
+  renderer: "html"
+
+
+relative_permalinks: false
+permalink: /posts/:slug/
+
+pagination: true
+paginate: 7
+paginate_path: page/:num/
+
+author:
+    name: "王云子"
+    email: "xueq695@gmail.com"
+    uri: "https://github.com/SalGnt"
+
+defaults:
+    - scope:
+          path: "_posts"
+          type: "posts"
+      values:
+          layout: "post"
+          sitemap: true
+          hidden: false
+          reading_time: true
+          # Meta
+          show_tags: true
+          show_categories: true
+          # Social
+          share_buttons: true
+          disqus: true
+
+
+
+plugins:
+    - jekyll-feed
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-fetch-notion
+
+default_thumbnails:
+  - https://cdn.pixabay.com/photo/2023/11/14/20/08/woman-8388428_1280.jpg
+  - https://cdn.pixabay.com/photo/2024/02/16/19/22/green-parrot-8578207_1280.jpg
+  - https://cdn.pixabay.com/photo/2023/03/14/12/04/flowers-7852194_1280.jpg
+  - https://cdn.pixabay.com/photo/2023/10/11/03/33/door-8307616_1280.jpg
+  - https://cdn.pixabay.com/photo/2024/06/22/14/51/sea-8846477_1280.jpg
+  - https://cdn.pixabay.com/photo/2024/02/19/08/35/sailboat-8582847_1280.jpg
+  - https://cdn.pixabay.com/photo/2024/03/13/17/57/sea-8631493_1280.jpg
+  - https://cdn.pixabay.com/photo/2023/11/16/22/35/church-8393259_1280.jpg
+  - https://cdn.pixabay.com/photo/2024/05/09/17/24/shih-tzu-8751508_1280.jpg
