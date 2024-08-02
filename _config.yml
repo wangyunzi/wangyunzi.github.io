@@ -45,19 +45,8 @@ defaults:
           # Social
           share_buttons: true
           disqus: true
-    - scope:
-          path: ""
-          type: "page"
-      values:
-          layout: "page"
-          sitemap: false        # 设置是否包含在 sitemap 中
-          hidden: false         # 设置页面是否隐藏
-          reading_time: false   # 是否显示阅读时间
-          show_tags: false      # 是否显示标签
-          show_categories: false # 是否显示分类
-          share_buttons: false  # 是否显示分享按钮
-          disqus: false         # 是否启用 Disqus 评论
-
+          twikoo: true
+          
 include: [_pages]
 # ...
 notion:
