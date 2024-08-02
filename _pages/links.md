@@ -2,6 +2,7 @@
 title: 链圈
 layout: page
 date: 2024-04-21
+permalink: /links/
 ---
 
 <div class="friends">

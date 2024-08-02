@@ -2,6 +2,7 @@
 title: 相册
 layout: page
 date: 2024-04-21
+permalink: /album/
 ---
 
 
