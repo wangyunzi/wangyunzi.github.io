@@ -46,16 +46,21 @@ figure {
   margin-bottom: 30px;
 }
 
-img {
+/**
+ * Images
+ */
+ img {
   display: block;
+  height: auto;
   margin: auto;
   max-width: 100%;
-  width: 60%;
-  height: auto; /* 修改为 auto，以保持图像的纵横比 */
-  border: 5px solid white; /* 添加白色边框，宽度为 5px */
-  box-sizing: border-box; /* 确保边框不会影响图片的实际宽度 */
+  vertical-align: middle;
+  width: auto;
 }
 
+/**
+ * Figures
+ */
 figure>img {
   display: block;
 }

@@ -281,13 +281,19 @@
     z-index: -1; /* 将伪元素置于文字后面 */
     transform: scale(1.1); /* 放大伪元素以创建不规则边缘 */
   }
-  
-  
-  
 
-  
   .post-content h2 {
     font-size: 32px;
+  }
+
+  .post-content img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    width: 60%;
+    height: auto; /* 修改为 auto，以保持图像的纵横比 */
+    border: 5px solid white; /* 添加白色边框，宽度为 5px */
+    box-sizing: border-box; /* 确保边框不会影响图片的实际宽度 */
   }
   
   @media screen and (max-width: 800px) {
