@@ -254,11 +254,37 @@
     font-size: 1em;
     margin-bottom: 60px;
     line-height: 2;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     overflow-wrap: break-word;
     width: 100%; /* 设置容器宽度 */
     margin-top: 20px;
   }
+
+  .post-content strong {
+    padding: 2px 4px;
+    background-color: #fce4ec; /* 明亮的马克笔颜色 */
+    color: #000; /* 字体颜色 */
+    font-weight: bold; /* 加粗字体 */
+    font-family: 'Arial', sans-serif; /* 清晰的字体 */
+    position: relative; /* 使伪元素相对定位 */
+  }
+  
+  .post-content strong::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fce4ec; /* 与文字背景颜色一致 */
+    clip-path: polygon(0% 0%, 10% 10%, 0% 100%, 100% 100%, 90% 90%, 100% 0%); /* 不规则边缘 */
+    z-index: -1; /* 将伪元素置于文字后面 */
+    transform: scale(1.1); /* 放大伪元素以创建不规则边缘 */
+  }
+  
+  
+  
+
   
   .post-content h2 {
     font-size: 32px;
