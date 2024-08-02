@@ -1,14 +1,8 @@
 ---
-layout: page
 title: 链圈
-# layout: links
+layout: page
 date: 2024-04-21
-permalink: /links/
-order: 3
 ---
-
-<div id="rss-articles">
-<script src="{{ "/assets/js/rss.js"}}"></script>
 
 <div class="friends">
     <div id="hexo-circle-of-friends-root"></div>

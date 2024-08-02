@@ -1,10 +1,7 @@
 ---
-layout: page
 title: 瞬间
-# layout: memos
+layout: page
 date: 2024-04-21
-permalink: /memos/
-order: 4
 ---
 
 
@@ -37,6 +34,6 @@ order: 4
 <script src="https://npm.elemecdn.com/marked/marked.min.js"></script>
 <script src="https://jsd.onmicrosoft.cn/gh/Tokinx/ViewImage/view-image.min.js"></script>
 <script src="https://jsd.onmicrosoft.cn/gh/Tokinx/Lately/lately.min.js"></script>
-<script src="{{ "/assets/js/memos.js"}}"></script>
+<script src="{{ "js/memos.js" | absURL }}"></script>
 
 

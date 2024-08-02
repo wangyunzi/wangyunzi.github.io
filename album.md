@@ -1,10 +1,7 @@
 ---
-layout: page
 title: 相册
-# layout: album
+layout: page
 date: 2024-04-21
-permalink: /album/
-order: 5
 ---
 
 
