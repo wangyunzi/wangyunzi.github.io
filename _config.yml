@@ -71,9 +71,9 @@ notion:
   databases:
     # your database id
     # https://www.notion.so/{workspace_name}/{database_id}?v={view_id}
-    - id: e32fcf9cfa3b4ce4bcf9e75be2df8861
-      filter: { "property": "pstatus", "select": { "equals": "已发布" } }
-      sorts: [{ "timestamp": "created_time", "direction": "ascending" }]
+    - id: e1b7bfbf854449a981d752e374ad8f31
+      filter: { "property": "ptype", "select": { "equals": "post" } }
+      # sorts: [{ "timestamp": "created_time", "direction": "ascending" }]
 
 plugins:
     - jekyll-feed
