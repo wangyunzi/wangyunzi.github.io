@@ -32,9 +32,6 @@
     position: absolute;
     top: 50%;
     width: 28px;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
   
@@ -50,16 +47,10 @@
   }
   
   .sb-toggle-left .nav-icon:before {
-    -webkit-transform: translateY(-8px);
-    -moz-transform: translateY(-8px);
-    -o-transform: translateY(-8px);
     transform: translateY(-8px);
   }
   
   .sb-toggle-left .nav-icon:after {
-    -webkit-transform: translateY(8px);
-    -moz-transform: translateY(8px);
-    -o-transform: translateY(8px);
     transform: translateY(8px);
   }
   
@@ -90,13 +81,6 @@
   
   .sb-slidebar .site-info p {
     margin: 0;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .sb-slidebar .site-info {
-      padding: 15px;
-      width: auto;
-    }
   }
   
   .sb-slidebar .sb-menu {
@@ -130,5 +114,27 @@
     background-color: #eee;
     color: #111;
     text-decoration: none;
+  }
+  
+  /* Mobile adjustments */
+  @media screen and (max-width: 800px) {
+    .sb-slidebar {
+      height: 100vh; /* 使侧边栏占满视口高度 */
+      overflow-y: auto; /* 启用垂直滚动 */
+    }
+  
+    .sb-slidebar .site-title {
+      font-size: 20px;
+      padding: 40px 15px;
+    }
+  
+    .sb-slidebar .sb-menu > li a {
+      padding: 20px 15px; /* 减小内边距 */
+    }
+  
+    .sb-slidebar .site-info {
+      padding: 10px;
+      position: relative; /* 避免绝对定位影响 */
+    }
   }
   

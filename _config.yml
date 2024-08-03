@@ -28,7 +28,7 @@ paginate_path: page/:num/
 author:
     name: "王云子"
     email: "xueq695@gmail.com"
-    uri: "https://github.com/SalGnt"
+    uri: "https://wangyunzi.com"
 
 defaults:
     - scope:
@@ -44,10 +44,25 @@ defaults:
           show_categories: true
           # Social
           share_buttons: true
-          disqus: true
+          disqus: false
           twikoo: true
-          
-include: [_pages]
+    - scope:
+          path: "_album"
+          type: "album"
+      values:
+          layout: "page"
+          sitemap: false
+          hidden: false
+
+collections:
+  album:
+    output: true
+    permalink: /album/:path/
+
+include:
+  - _pages
+  - _album
+
 # ...
 notion:
   # disables the sync at build stage

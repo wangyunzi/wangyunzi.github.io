@@ -5,80 +5,90 @@ date: 2024-04-21
 permalink: /album/
 ---
 
-
-<div class="gallery-photos page">
-    <img src="https://eeeeeeeeeeeeee.ee/img/loading.svg" style="display: block; margin: auto; width: 10px; height: 20px;">
-</div>
-<!-- 移除了 FancyBox 的 CSS 和 JS 引入 -->
-
 <style>
-/* 页面初始化 */
-.page-title { display: none; }
-.page-top-card { border-radius: 12px; }
-/* 页面初始化结束 */
-#article-container a img { margin: 0; border-radius: 0; width: 100%; }
-.gallery-photos { width: 100%; margin-top: 10px; }
-.gallery-photo { min-height: 5rem; width: 23.65%; padding: 4px; position: relative; }
-.gallery-photo a { display: block; overflow: hidden; border: var(--leonus-border); }
-.gallery-photo img { display: block; width: 100%; animation: fadeIn 1s; cursor: pointer; transition: all .4s ease-in-out !important; }
-.gallery-photo span.photo-title, .gallery-photo span.photo-time { max-width: calc(100% - 7px); position: absolute; line-height: 1.8; left: 4px; font-size: 14px; background: rgba(0, 0, 0, 0.3); padding: 0px 8px; color: #fff; animation: fadeIn 1s; }
-.gallery-photo span.photo-title { bottom: 4px; }
-.gallery-photo span.photo-time { top: 4px; }
-.gallery-photo:hover img { transform: scale(1.1); }
-@media screen and (max-width: 1100px) {
-    .gallery-photo { width: 33.3%; }
+
+/* External CSS file */
+ul.album-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-@media screen and (max-width: 900px) { .page-top-card { margin: 0; } }
-@media screen and (max-width: 768px) {
-    .gallery-photo { width: 45.65%; padding: 3px; }
-    .gallery-photo span.photo-time { display: none; }
-    .page-top-card { border-radius: 8px; }
-    .gallery-photo span.photo-title { left: 3px; bottom: 3px; }
+
+ul.album-list li {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(27.333% - 0px); /* Three items per row with margins considered */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+    height: 300px; /* Set a fixed height for uniform size */
 }
-@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+ul.album-list li:hover {
+    transform: scale(1.03);
+}
+
+ul.album-list a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+    font-size: 1em;
+}
+
+ul.album-list img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    height: 200px; /* Set a fixed height for images */
+}
+
+ul.album-list h2 {
+    font-size: 1em; /* Smaller title font size */
+    margin: 10px;
+    color: #333;
+    overflow: hidden; /* Prevent overflow of long titles */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+ul.album-list p {
+    font-size: 0.9em;
+    margin: 0 10px 10px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    ul.album-list li {
+        width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    ul.album-list li {
+        width: calc(100% - 20px); /* One item per row on very small screens */
+    }
+}
+
 </style>
 
-<script>
-if (1) {
-    let url = 'https://memos.wangyunzi.com'; // 修改api
-    fetch(url + '/api/v1/memo?creatorId=1&tag=相册')
-        .then(res => res.json())
-        .then(data => {
-            let html = '',
-                imgs = [];
-            data.forEach(item => {
-                let ls = item.content.match(/\!\[.*?\]\(.*?\)/g);
-                if (ls) imgs = imgs.concat(ls);
-                if (item.resourceList.length) {
-                    item.resourceList.forEach(t => {
-                        if (t.externalLink) imgs.push(`![](${t.externalLink})`);
-                        else imgs.push(`![](${url}/o/r/${t.id}/${t.publicId}/${t.filename})`);
-                    });
-                }
-            });
 
-            if (imgs) imgs.forEach(item => {
-                let img = item.replace(/!\[.*?\]\((.*?)\)/g, '$1'),
-                    time, title, tat = item.replace(/!\[(.*?)\]\(.*?\)/g, '$1');
-                if (tat.indexOf(' ') != -1) {
-                    time = tat.split(' ')[0];
-                    title = tat.split(' ')[1];
-                } else title = tat;
+<ul class="album-list">
+    {% assign sorted_albums = site.album | sort: 'date' | reverse %}
+    {% for album in sorted_albums %}
+        <li>
+            <a href="{{ album.url }}">
+                <img src="{{ album.cover }}" alt="{{ album.title }}">
+                <h2>{{ album.title }}</h2>
+                <p>{{ album.date | date: "%Y年%m月%d日" }}</p>
+            </a>
+        </li>
+    {% endfor %}
+</ul>
 
-                html += `<div class="gallery-photo"><a href="${img}" class="fancybox" data-thumb="${img}"><img class="no-lazyload photo-img" loading='lazy' decoding="async" src="${img}"></a>`;
-                title ? html += `<span class="photo-title">${title}</span>` : '';
-                time ? html += `<span class="photo-time">${time}</span>` : '';
-                html += `</div>`;
-            });
 
-            document.querySelector('.gallery-photos.page').innerHTML = html;
-            imgStatus.watch('.photo-img', () => { waterfall('.gallery-photos'); });
-            window.Lately && Lately.init({ target: '.photo-time' });
-        })
-        .catch();
-}
-</script>
-<script type="text/javascript" src="https://blog.wangyunzi.com/json/waterfall.min.js"></script>
-<script type="text/javascript" src="https://blog.wangyunzi.com/json/imgStatus.min.js"></script>
-<script type="text/javascript" src="https://blog.wangyunzi.com/json/lately.min.js"></script>
-<script type="text/javascript" src="https://blog.wangyunzi.com/json/view-image.js"></script>

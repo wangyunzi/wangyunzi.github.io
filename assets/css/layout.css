@@ -254,10 +254,17 @@
     font-size: 1em;
     margin-bottom: 60px;
     line-height: 2;
-    /* word-wrap: break-word; */
-    overflow-wrap: break-word;
+    overflow-wrap: break-word; /* 自动换行 */
     width: 100%; /* 设置容器宽度 */
     margin-top: 20px;
+    display: block; /* 确保每个链接都在单独的一行显示 */
+    text-decoration: none; /* 去掉默认下划线 */
+  }
+
+  
+  .post-content br {
+    content: "";
+    display: block ; /* 强制换行 */
   }
 
   .post-content strong {

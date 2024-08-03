@@ -4,6 +4,7 @@
 /* twikoo 评论样式 */
 .twikoo {
     overflow: visible !important;
+    font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .tk-extras,
@@ -14,12 +15,23 @@
     display: none !important;
 }
 
+
 /* 使回复链接和评论内容在同一行，并始终在第一行 */
 .tk-content {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     margin-top: 0 !important;
+}
+
+.tk-content-expand {
+  max-height: none;
+}
+.tk-replies .tk-content {
+  font-size: .9em;
+  display: flex;
+  align-items: baseline; /* 垂直对齐 */
+  color: #292a2d !important;
 }
 
 .tk-content span:first-child {
@@ -37,14 +49,18 @@
     margin-left: 0 !important;
 }
 
+.tk-nick-link {
+    color: #252627 !important;
+}
+
+.tk-ruser {
+    color: black;
+    text-decoration: none; /* 移除下划线 */
+}
+
 .tk-replies {
     display: flex;
     flex-direction: column;
-}
-
-.tk-replies .tk-content {
-    display: flex;
-    align-items: baseline; /* 垂直对齐 */
 }
 
 .tk-comment {
@@ -69,6 +85,7 @@
     z-index: 99;
     margin-top: -10px;
     padding: 0 !important;
+    color: #292a2d !important;
 }
 
 
@@ -186,6 +203,7 @@
 }
 
 </style>
+
 <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.38/dist/twikoo.all.min.js"></script>
 <script>
 twikoo.init({
@@ -196,4 +214,5 @@ twikoo.init({
   // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
 })
 </script>
+</br>
 {% endif %}
