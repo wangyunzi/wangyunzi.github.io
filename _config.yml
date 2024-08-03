@@ -72,8 +72,6 @@ notion:
     # your database id
     # https://www.notion.so/{workspace_name}/{database_id}?v={view_id}
     - id: e32fcf9cfa3b4ce4bcf9e75be2df8861
-      # filter based on your database properties'
-      # replace with your own
       filter: { "property": "pstatus", "select": { "equals": "已发布" } }
       sorts: [{ "timestamp": "created_time", "direction": "ascending" }]
 
