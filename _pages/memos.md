@@ -33,7 +33,6 @@ permalink: /memos/
 <link rel="stylesheet" href="https://cdn.staticfile.org/artalk/2.8.3/Artalk.css">
 <script type="text/javascript" src="https://cdn.staticfile.org/artalk/2.8.3/Artalk.js"></script>
 <script src="https://npm.elemecdn.com/marked/marked.min.js"></script>
-<script src="https://jsd.onmicrosoft.cn/gh/Tokinx/ViewImage/view-image.min.js"></script>
 <script src="https://jsd.onmicrosoft.cn/gh/Tokinx/Lately/lately.min.js"></script>
 <script src="{{ "/assets/js/memos.js"}}"></script>
 
