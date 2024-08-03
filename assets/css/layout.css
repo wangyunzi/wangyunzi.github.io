@@ -398,28 +398,6 @@
     border-radius: 0; /* 统一圆角设置 */
   }
   
-  /* Mobile Responsive Styles */
-  @media (max-width: 768px) {
-    .post-share {
-      margin-bottom: 40px; /* 缩小底部边距以适应小屏幕 */
-    }
-  
-    .post-share .rrssb-buttons li {
-      display: inline-block; /* 保持内联块元素，适应小屏幕 */
-      margin-bottom: 10px; /* 在按钮之间添加垂直间距 */
-      padding: 0 5px; /* 保持左右间距 */
-    }
-  
-    .post-share .rrssb-buttons li:last-child {
-      padding-right: 5px; /* 保持最后一个按钮的右间距 */
-    }
-  
-    .post-share .rrssb-buttons li a {
-      font-size: 14px; /* 缩小字体以适应小屏幕 */
-      padding: 10px; /* 增加按钮内边距，使其更易点击 */
-    }
-  }
-  
   
   #disqus_thread {
     margin-bottom: 60px;
