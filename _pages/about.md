@@ -58,7 +58,7 @@ order: 6
 
 #### 🌞建站日记
 - 2024年08月03日  使用jekyll框架，主题[Travelogue](https://github.com/SalGnt/Travelogue)
-- 2024年05月01日  转回静态博客
+- 2024年05月01日  转回静态博客，使用框架hugo，主题[ZOZO](https://github.com/varkai/hugo-theme-zozo)
 - 2024年01月22日  尝试主题[MeaWord](https://www.bawge.com/archives/63.html)
 - 2024年01月19日  尝试博客主题[Story](https://github.com/txperl/Story-for-Typecho)
 - 2023年09月08日  变迁博客至typecho，主题是[Gplus](https://muxer.cn/theme/typecho-theme-gplus.html)
