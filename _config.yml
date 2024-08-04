@@ -1,9 +1,9 @@
 # Site settings
 name: 长街短梦
-description: "A minimal, single-column Jekyll theme that provides an immersive read experience for your readers"
+description: "此行山高路远，我只剩口袋玫瑰一片。"
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://wangyunzi.com" # the base hostname & protocol for your site
 # theme: travelogue
 
 markdown: kramdown

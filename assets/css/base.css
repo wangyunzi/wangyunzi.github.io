@@ -52,13 +52,11 @@ figure {
  img {
   display: block;
   height: auto;
-  margin: auto;
+  margin: 0 auto;
   max-width: 100%;
   vertical-align: middle;
   width: auto;
 }
-
-
 
 /**
  * Figures

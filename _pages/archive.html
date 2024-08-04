@@ -6,7 +6,7 @@ title: 时间线
 date: "2024-04-25 22:18:52"
 order: 1
 ---
-
+{% include search-lunr.html %}
 {% for post in site.posts %}
     {% capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% if currentyear != year %}
