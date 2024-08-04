@@ -7,8 +7,11 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 # theme: travelogue
 
 markdown: kramdown
+# More › http://kramdown.gettalong.org/quickref.html
+# Options › http://kramdown.gettalong.org/options.html
 kramdown:
   input: GFM
+  # https://github.com/jekyll/jekyll/pull/4090
   syntax_highlighter: rouge
 
 compress_html:
@@ -80,6 +83,7 @@ plugins:
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-fetch-notion
+    - jekyll-seo-tag
 
 default_thumbnails:
   - https://cdn.pixabay.com/photo/2023/11/14/20/08/woman-8388428_1280.jpg

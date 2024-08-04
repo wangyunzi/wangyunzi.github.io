@@ -159,6 +159,9 @@ pre {
   margin-right: -60px;
   overflow-x: scroll;
   padding: 20px 60px;
+  /* 代码块自动换行 */
+  /* white-space: pre-wrap;
+  word-wrap: break-word; */
 }
 
 pre>code {
