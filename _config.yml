@@ -13,7 +13,7 @@ kramdown:
   input: GFM
   # https://github.com/jekyll/jekyll/pull/4090
   syntax_highlighter: rouge
-
+  
 compress_html:
   blanklines: true  #其会默认把所有的换行都压缩成一行。因为毕竟大部分 html 语法都不依赖换行。
 highlight:
@@ -84,6 +84,7 @@ plugins:
     - jekyll-sitemap
     - jekyll-fetch-notion
     - jekyll-seo-tag
+
 
 default_thumbnails:
   - https://cdn.pixabay.com/photo/2023/11/14/20/08/woman-8388428_1280.jpg

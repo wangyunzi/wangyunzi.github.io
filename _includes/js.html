@@ -116,3 +116,20 @@ var _hmt = _hmt || [];
         textColor: '#FFFFF0',
     })</script>
 
+<!-- 添加pangu功能 -->
+<!-- <script src="{{ '/assets/js/pangu.min.js' | relative_url }}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    pangu.spacingPage();
+  });
+</script> -->
+
+<!-- 添加 JavaScript 脚本来让所有文章内容中的链接默认在新标签中打开 -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll('article a');
+  links.forEach(function (link) {
+    link.setAttribute('target', '_blank');
+  });
+});
+</script>
