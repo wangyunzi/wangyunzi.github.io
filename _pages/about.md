@@ -57,6 +57,7 @@ order: 6
 
 
 #### 🌞建站日记
+- 2024年08月03日  使用jekyll框架，主题[Travelogue](https://github.com/SalGnt/Travelogue)
 - 2024年05月01日  转回静态博客
 - 2024年01月22日  尝试主题[MeaWord](https://www.bawge.com/archives/63.html)
 - 2024年01月19日  尝试博客主题[Story](https://github.com/txperl/Story-for-Typecho)
@@ -75,3 +76,5 @@ order: 6
 
 ![:wangyunzi](https://count.getloli.com/get/@wangyunzi?theme=asoul)
 
+<a href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
+<a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"><img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" style="width:auto;height:32px;"></a> 
