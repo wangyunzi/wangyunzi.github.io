@@ -6,25 +6,26 @@ permalink: /album/
 ---
 
 <style>
-
 /* External CSS file */
 ul.album-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 ul.album-list li {
-    margin: 10px;
+    margin: 10px 0;
     display: inline-block;
     vertical-align: top;
-    width: calc(27.333% - 0px); /* Three items per row with margins considered */
+    width: calc(33.333% - 20px); /* Three items per row with margins considered */
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s;
     box-sizing: border-box; /* Ensure padding and border are included in width/height */
-    height: 300px; /* Set a fixed height for uniform size */
 }
 
 ul.album-list li:hover {
@@ -41,10 +42,11 @@ ul.album-list a {
 
 ul.album-list img {
     width: 100%;
-    height: auto;
+    height: 150px; /* Set a fixed height for images */
     display: block;
     object-fit: cover; /* Ensure the image covers the entire container */
-    height: 200px; /* Set a fixed height for images */
+    object-position: center; /* Center the image */
+    loading: lazy; /* Lazy load images */
 }
 
 ul.album-list h2 {
@@ -74,21 +76,17 @@ ul.album-list p {
         width: calc(100% - 20px); /* One item per row on very small screens */
     }
 }
-
 </style>
-
 
 <ul class="album-list">
     {% assign sorted_albums = site.album | sort: 'date' | reverse %}
     {% for album in sorted_albums %}
         <li>
             <a href="{{ album.url }}">
-                <img src="{{ album.cover }}" alt="{{ album.title }}">
+                <img src="{{ album.cover }}" alt="{{ album.title }}" loading="lazy">
                 <h2>{{ album.title }}</h2>
                 <p>{{ album.date | date: "%Y年%m月%d日" }}</p>
             </a>
         </li>
     {% endfor %}
 </ul>
-
-
