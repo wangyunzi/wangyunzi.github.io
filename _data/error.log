@@ -6,3 +6,5 @@
 
 [Tue Aug 6 19:13:2024] [Failed to parse RSS] https://ihaihe.cn/feed: Failed to detect feed type
 
+[Tue Aug 6 20:01:2024] [Get RSS error] https://jingxin18.cn/feed: Attempt 1/3: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
+
