@@ -29,5 +29,5 @@ jobs:
     - name: Run Go program
       env:
         TOKEN: ${{ secrets.TOKEN }}
-      run: ./main
+      run: 
       working-directory: ./api/GrabLatestRSS
