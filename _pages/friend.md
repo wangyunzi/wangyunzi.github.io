@@ -11,7 +11,7 @@ permalink: /friend/
 
 [是非题](https://www.shifeiti.com)  
 
-[Shall We Code](https://waynerv.com/)    一名后端工程师 
+[Shall We Code](https://waynerv.com/)    一名后端工程师
 
 [杜老师说](https://dusays.com)    杜老师说
 
