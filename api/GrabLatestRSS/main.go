@@ -13,7 +13,6 @@ import (
 	"sort"
 	"sync"
 	"time"
-
 	"github.com/google/go-github/v39/github"
 	"github.com/mmcdole/gofeed"
 	"golang.org/x/oauth2"
