@@ -340,18 +340,6 @@ func saveToGitHub(config Config, data []Article) error {
 		AccessToken: config.GithubToken,
 	})))
 
-	manualArticles := []Article{
-		{
-			DomainName: "https://foreverblog.cn",
-			Name:       "十年之约",
-			Title:      "穿梭虫洞-随机访问十年之约友链博客",
-			Link:       "https://foreverblog.cn/go.html",
-			Date:       "January 01, 2000",
-			Avatar:     "https://cos.lhasa.icu/LinksAvatar/foreverblog.cn.png",
-		},
-	}
-
-	data = append(data, manualArticles...)
 	jsonData, err := json.Marshal(data)
 	if err != nil {
 		return err
@@ -385,6 +373,7 @@ func saveToGitHub(config Config, data []Article) error {
 
 	return nil
 }
+
 
 // 从 GitHub 仓库中获取 RSS 文件
 func readFeedsFromGitHub(config Config) ([]string, error) {
