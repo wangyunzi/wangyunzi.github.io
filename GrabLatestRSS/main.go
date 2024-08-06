@@ -50,8 +50,8 @@ type Article struct {
 func initConfig() Config {
 	return Config{
 		GithubToken:      os.Getenv("TOKEN"), // 从环境变量中获取 GitHub API 令牌
-		GithubName:       "achuanya",         // GitHub 用户名
-		GithubRepository: "lhasa.github.io",  // GitHub 仓库名
+		GithubName:       "wangyunzi",         // GitHub 用户名
+		GithubRepository: "wangyunzi.github.io",  // GitHub 仓库名
 	}
 }
 

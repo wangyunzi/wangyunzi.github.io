@@ -48,7 +48,7 @@ type Article struct {
 // 初始化并返回配置信息
 func initConfig() Config {
 	return Config{
-		GithubToken:      os.Getenv("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"), // 从环境变量中获取 GitHub API 令牌
+		GithubToken:      os.Getenv("TOKEN"), // 从环境变量中获取 GitHub API 令牌
 		GithubName:       "wangyunzi",         // GitHub 用户名
 		GithubRepository: "wangyunzi.github.io",  // GitHub 仓库名
 	}
