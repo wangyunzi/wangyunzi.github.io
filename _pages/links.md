@@ -118,7 +118,7 @@ permalink: /links/
 <br> -->
 <script type="text/javascript" src="/assets/js/rss.js"></script>
 <section class="page-content">
-  <section class="post-list">
+  <section class="rss-post-list">
     {% assign rss_data = site.data.rss_data %}
     {% for post in rss_data %}
       <article class="post-item">
@@ -134,3 +134,73 @@ permalink: /links/
     {% endfor %}
   </section>
 </section>
+
+<style>
+/* 这个是链圈页面 */
+.rss-post-list {
+  min-height: 680px;
+  padding: 20px; /* 增加内边距以避免内容贴边 */
+}
+.rss-post-list .post-item {
+  display: flex;
+  margin: 20px 0;
+  padding: 10px; /* 增加内边距以提高可读性 */
+  border-radius: 8px; /* 圆角边框 */
+}
+.rss-post-list .post-item .post-item-thumb {
+  display: block;
+  width: 70px; /* 增加缩略图宽度 */
+  height: 70px; /* 增加缩略图高度 */
+  overflow: hidden;
+  border-radius: 8px; /* 调整圆角 */
+  transition: all 0.5s;
+  background-size: cover; /* 修改背景缩放方式 */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rss-post-list .post-item .post-item-summary {
+  margin-left: 15px; /* 增加左边距 */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.rss-post-list .post-item .post-item-summary .post-item-title {
+  font-size: 16px; /* 增加标题字体大小 */
+  color: rgb(46, 169, 223);
+  margin-bottom: 5px; /* 增加底部间距 */
+}
+.rss-post-list .post-item .post-item-summary .post-item-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 1px; /* 修改渐变条高度 */
+  background-color: transparent;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 50%);
+}
+.rss-post-list .post-item .post-item-summary .post-item-date {
+  color: rgb(150, 150, 150);
+  font-size: 14px; /* 增加日期字体大小 */
+  margin-bottom: 5px; /* 增加底部间距 */
+}
+.rss-post-list .post-item .post-item-comment {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 40px; /* 增加评论按钮宽度 */
+  height: 20px; /* 增加评论按钮高度 */
+  font-weight: 500;
+  font-size: 14px; /* 增加评论按钮字体大小 */
+  line-height: 20px; /* 增加评论按钮行高 */
+  background-color: rgb(150, 215, 245);
+  margin-left: auto; /* 将评论按钮右对齐 */
+  margin-top: 10px; /* 增加顶部间距 */
+}
+.rss-post-list .post-item .post-item-comment:hover {
+  background-color: rgb(46, 169, 223);
+}
+
+</style>

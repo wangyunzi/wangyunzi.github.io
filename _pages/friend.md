@@ -10,38 +10,74 @@ permalink: /friend/
 <h3>我的朋友</h3>
 
 [是非题](https://www.shifeiti.com)  
+
 [Shall We Code](https://waynerv.com/)    一名后端工程师 
+
 [杜老师说](https://dusays.com)    杜老师说
-[嗜血星空](https://sxxkearth.github.io/)    建工学习者，分享部分个人收藏及笔记记录，网址及工具等 
+
+[嗜血星空](https://sxxkearth.github.io/)    建工学习者，分享部分个人收藏及笔记记录，
+网址及工具等 
+
 [木木木木木](https://immmmm.com)  
+
 [McLsk888’s Blog](https://mclsk888.top )  .....
+
 [上杉九月的博客](https://blog.sakurasep.site/)  分享生活，探索未来！
+
 [一大加贝](https://tianheg.co/)  学习技术，热爱生活
+
 [荷戟独彷徨](https://guanqr.com/)  爱光学，爱生活，爱创造
+
 [Amnesia's Blog](https://amnesia-f.vercel.app/)  零碎的岛屿总会找到海
+
 [UyoAhz](https://uyoahz.cn/)  集中精神，以气御剪
+
 [Sulv’s Blog](https://www.sulvblog.cn)  一个记录技术、阅读、生活的博客
+
 [凡梦星尘空间站](https://lisenhui.cn)  再平凡的人也有属于他的梦想！
+
 [Dvel's Blog](https://dvel.me/)  Less is More.
-[Black Flies](https://www.yyyzyyyz.cn/)  When nothing goes right,just go left.
+
+[Black Flies](https://www.yyyzyyyz.cn/)  When nothing goes right,just go 
+left.
+
 [风记星辰](https://www.thyuu.com)  分享生活 · 留下感动
+
 [DIDCTF-Blog](https://blog.didctf.com/)  一个爱好网安的法学生
+
 [山岳库博](https://kmar.top/)  开发学习启发性二刺螈
+
 [USTC-茶糜花开](https://blog.starysky.top)  Science lights up the world
+
 [西瓜撞地球](https://bio-w.cn/)  我在人间贩卖彩虹
+
 [胡涂说](https://hutusi.com/)  任抛星汉归园圃，留取乾坤盛酒囊
-[浮云翩迁之间](https://blognas.hwb0307.com) 百代繁华一朝都，谁非过客；千秋明月吹角寒，花是主人。
+
+[浮云翩迁之间](https://blognas.hwb0307.com) 百代繁华一朝都，谁非过客；千秋明月吹角
+寒，花是主人。
+
 [Echo’s blog](https://www.liveout.cn/)  韶华不为少年留 恨悠悠 几时休
+
 [Jdeal](https://www.jdeal.cn)  Life is like a Design.
+
 [一蓑烟雨的博客](https://easyf12.top/)  竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。
+
 [Shixiaocaia](https://shixiaocaia.fun)  去做吧，反正都会后悔。
+
 [小卢](https://b0ae.cn)  个人博客记录日常
+
 [记忆一隅](https://vlieo.com/)  凡事总需研究，才会明白
+
 [This Cute World](https://thiscute.world/)  脚下虽有万水千山，但行者必至。
+
 [Leonus](https://blog.leonus.cn)  进一寸有进一寸的欢喜。
+
 [二猫 blog](https://jingxin18.cn)  一个简单的 Blog 站点
+
 [Dorad](https://blog.cuger.cn)  地质、炼丹、编程、GIS、摄影
+
 [wenderfeng](https://wenderfeng.top/) Step by step
+
 [云晓晨CatchYun](https://blog.catchyun.com/) 未来路远 • 勿忘初心
 
 <h3>友链要求</h3>
