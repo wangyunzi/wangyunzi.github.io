@@ -6,7 +6,6 @@ https://lingxiankong.github.io/pages/rss.xml
 https://imiku.me/index.xml
 https://www.yyyzyyyz.cn/atom.xml
 https://immmmm.com/atom.xml
-https://www.shephe.com/feed/
 https://www.sulvblog.cn/index.xml
 https://www.eallion.com/index.xml
 https://guanqr.com/atom.xml

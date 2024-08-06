@@ -5,7 +5,6 @@ date: 2024-04-21
 permalink: /friend/
 ---
 
-
 <div style="text-align:center;color:red;">暂不添加友链</div>
 <h3>我的朋友</h3>
 
