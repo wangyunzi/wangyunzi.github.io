@@ -48,7 +48,7 @@ defaults:
           # Social
           share_buttons: true
           disqus: false
-          twikoo: true
+          twikoo: false
     - scope:
           path: "_album"
           type: "album"
