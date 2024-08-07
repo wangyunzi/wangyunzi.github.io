@@ -1,0 +1,59 @@
+name: Sync Specific Folders from Obsidian Repo
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时运行一次
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Obsidian repository
+      uses: actions/checkout@v2
+      with:
+        repository: wangyunzi/myob
+        path: obsidian-repo
+        token: ${{ secrets.OBSIDIAN_REPO_TOKEN }}
+
+    - name: Checkout Blog repository
+      uses: actions/checkout@v2
+      with:
+        path: blog-repo
+        token: ${{ secrets.BLOG_REPO_TOKEN }}
+
+    - name: Sync _page folder
+      run: |
+        rsync -av --delete wangyunzi/myob/日记本/_page/ blog-repo/_page/
+        cd blog-repo
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add _page
+        git commit -m "Sync _page from Obsidian repository" || echo "No changes in _page"
+        cd -
+
+    - name: Sync _album folder
+      run: |
+        rsync -av --delete wangyunzi/myob/日记本/_album/ blog-repo/_album/
+        cd blog-repo
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add _album
+        git commit -m "Sync _album from Obsidian repository" || echo "No changes in _album"
+        cd -
+
+    - name: Sync _posts folder
+      run: |
+        rsync -av --delete wangyunzi/myob/日记本/_posts/ blog-repo/_posts/
+        cd blog-repo
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add _posts
+        git commit -m "Sync _posts from Obsidian repository" || echo "No changes in _posts"
+        cd -
+
+    - name: Push changes
+      run: |
+        cd blog-repo
+        git push
