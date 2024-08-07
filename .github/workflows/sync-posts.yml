@@ -11,31 +11,22 @@ jobs:
 
     steps:
     - name: Checkout Obsidian repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: wangyunzi/myob
         path: obsidian-repo
-        token: ${{ secrets.OBSIDIAN_REPO_TOKEN }}
-
+        token: ${{ secrets.OBSIDIAN_REPO_TOKEN }} # 如果使用 PAT，请确保此 token 设置正确
+    
     - name: Checkout blog repository
       uses: actions/checkout@v3
       with:
         repository: wangyunzi/wangyunzi.github.io
         path: blog-repo
-        token: ${{ secrets.BLOG_REPO_TOKEN }}
-        ssh-strict: true
-        persist-credentials: true
-        clean: true
-        fetch-depth: 1
-        lfs: false
-        submodules: false
-        set-safe-directory: true
-        sparse-checkout-cone-mode: true
-        fetch-tags: false
+        token: ${{ secrets.BLOG_REPO_TOKEN }} # 如果使用 PAT，请确保此 token 设置正确
 
     - name: Sync _page folder
       run: |
-        rsync -av --delete obsidian-repo/日记本/_page/ blog-repo/_page/
+        rsync -av --delete obsidian-repo/_page/ blog-repo/_page/
         cd blog-repo
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
@@ -45,7 +36,7 @@ jobs:
 
     - name: Sync _album folder
       run: |
-        rsync -av --delete obsidian-repo/日记本/_album/ blog-repo/_album/
+        rsync -av --delete obsidian-repo/_album/ blog-repo/_album/
         cd blog-repo
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
@@ -55,7 +46,7 @@ jobs:
 
     - name: Sync _posts folder
       run: |
-        rsync -av --delete obsidian-repo/日记本/_posts/ blog-repo/_posts/
+        rsync -av --delete obsidian-repo/_posts/ blog-repo/_posts/
         cd blog-repo
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
