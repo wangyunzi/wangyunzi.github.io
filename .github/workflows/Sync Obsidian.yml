@@ -1,4 +1,4 @@
-name: Sync Specific Folders from Obsidian Repo
+name: Sync Obsidian
 
 on:
   schedule:
