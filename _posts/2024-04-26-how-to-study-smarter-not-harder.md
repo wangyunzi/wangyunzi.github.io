@@ -4,7 +4,7 @@ description: 如何学习一直是一个人应该学会的事情，这个人视�
 tags: ["学习"]
 pstatus: 已发布
 ptype: posts
-date: 2024-04-26 21:37:00 +0800
+date: 2024-04-26 21:37:00 +0800 +0800
 slug: "118"
 id: ab748eb1-e81f-4ab1-b9c2-fd8357262a91
 title: [How to Study SMARTER, Not HARDER]
