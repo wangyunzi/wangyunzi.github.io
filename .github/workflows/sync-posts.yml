@@ -16,13 +16,13 @@ jobs:
         repository: wangyunzi/myob
         path: obsidian-repo
         token: ${{ secrets.OBSIDIAN_REPO_TOKEN }}
-    
+
     - name: Checkout blog repository
       uses: actions/checkout@v3
       with:
-        token: ${{ secrets.BLOG_REPO_TOKEN }}
-        path: blog-repo
         repository: wangyunzi/wangyunzi.github.io
+        path: blog-repo
+        token: ${{ secrets.BLOG_REPO_TOKEN }}
         ssh-strict: true
         persist-credentials: true
         clean: true
@@ -30,6 +30,8 @@ jobs:
         lfs: false
         submodules: false
         set-safe-directory: true
+        sparse-checkout-cone-mode: true
+        fetch-tags: false
 
     - name: Sync _page folder
       run: |
