@@ -101,6 +101,14 @@ jobs:
         git commit -m "Sync _posts from Obsidian repository" || echo "No changes in _posts"
         cd -
 
+	- name: Build site
+
+	  run: |
+		  cd wangyunzi.github.io
+		  bundle install
+		  bundle exec jekyll build
+		  cd -
+
     - name: Push changes
       run: |
         cd wangyunzi.github.io
