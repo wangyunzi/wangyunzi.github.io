@@ -31,14 +31,14 @@ jobs:
         echo "Listing wangyunzi.github.io"
         ls -R wangyunzi.github.io
 
-    - name: Sync _page folder
+    - name: Sync _pages folder
       run: |
         rsync -av --delete myob/日记本/_pages/ wangyunzi.github.io/_pages/
         cd wangyunzi.github.io
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git add _page
-        git commit -m "Sync _page from Obsidian repository" || echo "No changes in _page"
+        git add _pages
+        git commit -m "Sync _pages from Obsidian repository" || echo "No changes in _pages"
         cd -
 
     - name: Sync _album folder
