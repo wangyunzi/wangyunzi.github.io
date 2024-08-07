@@ -12,9 +12,9 @@ title: 使用GitHub Actions将Obsidian笔记同步到jekyll博客
 
 ## 前提条件
 
-- **GitHub 账户**：你需要一个 GitHub 账户，并拥有两个仓库：一个用于 Obsidian 笔记（`wangyunzi/myob`），一个用于博客（`wangyunzi/wangyunzi.github.io`）。
-- **GitHub Personal Access Token (PAT)**：你需要生成一个具有 `repo` 和 `workflow` 权限的 PAT。
-- **GitHub Actions**：你需要在两个仓库中设置 GitHub Actions 工作流。
+- GitHub 账户：你需要一个 GitHub 账户，并拥有两个仓库：一个用于 Obsidian 笔记（`wangyunzi/myob`），一个用于博客（`wangyunzi/wangyunzi.github.io`）。
+- GitHub Personal Access Token (PAT)：你需要生成一个具有 `repo` 和 `workflow` 权限的 PAT。
+- GitHub Actions：你需要在两个仓库中设置 GitHub Actions 工作流。
 
 ## 步骤
 
@@ -98,15 +98,7 @@ jobs:
         git add _posts
         git commit -m "Sync _posts from Obsidian repository" || echo "No changes in _posts"
         cd -
-
-	- name: Build site
-
-	  run: |
-		  cd wangyunzi.github.io
-		  bundle install
-		  bundle exec jekyll build
-		  cd -
-
+        
     - name: Push changes
       run: |
         cd wangyunzi.github.io
