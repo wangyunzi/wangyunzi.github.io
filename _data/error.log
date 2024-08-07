@@ -188,3 +188,5 @@
 
 [Wed Aug 7 20:38:2024] [Get RSS error] https://www.bio-w.cn/feed: Attempt 3/3: Get "https://www.bio-w.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-08-07T12:38:55Z is after 2024-08-05T23:59:59Z
 
+[Wed Aug 7 20:39:2024] [Failed to fetch RSS] https://jingxin18.cn/feed: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
+
