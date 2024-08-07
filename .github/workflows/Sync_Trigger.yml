@@ -1,4 +1,4 @@
-name: Trigger Sync_Obsidian Workflow
+name: Sync_Trigger
 
 on:
   push:
