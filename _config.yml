@@ -5,6 +5,7 @@ description: "此行山高路远，我只剩口袋玫瑰一片。"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://wangyunzi.com" # the base hostname & protocol for your site
 # theme: travelogue
+timezone: "Asia/Shanghai"
 
 markdown: kramdown
 # More › http://kramdown.gettalong.org/quickref.html
