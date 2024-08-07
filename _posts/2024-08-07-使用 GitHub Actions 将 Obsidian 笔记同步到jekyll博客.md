@@ -40,8 +40,12 @@ backgrounds:
 name: Sync_Obsidian
 
 on:
-  repository_dispatch:
-    types: [sync_from_obsidian]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch to deploy'
+        required: true
+        default: 'master'
 
 jobs:
   sync:
@@ -103,6 +107,7 @@ jobs:
       run: |
         cd wangyunzi.github.io
         git push
+
 ```
 
 4. 在博客仓库的 **Settings** > **Secrets** 中，添加 `PAT_TOKEN`，并将其设置为你生成的 Personal Access Token。
