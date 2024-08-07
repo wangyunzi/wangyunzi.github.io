@@ -1,9 +1,14 @@
 name: Sync_Obsidian
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # 每小时运行一次
+  # schedule:
+  #   - cron: '0 * * * *'  # 每小时运行一次
   workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch to deploy'
+        required: true
+        default: 'master'
 
 jobs:
   sync:
