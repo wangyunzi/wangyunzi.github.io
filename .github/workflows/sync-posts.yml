@@ -33,7 +33,7 @@ jobs:
 
     - name: Sync _page folder
       run: |
-        rsync -av --delete myob/日记本/_page/ wangyunzi.github.io/_page/
+        rsync -av --delete myob/日记本/_pages/ wangyunzi.github.io/_pages/
         cd wangyunzi.github.io
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
