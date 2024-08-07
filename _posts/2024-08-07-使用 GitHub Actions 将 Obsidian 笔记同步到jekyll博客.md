@@ -1,8 +1,6 @@
 ---
-categories:
-  - 博客
-tags:
-  - jekyll
+categories: 博客
+tags: ["jekyll"]
 date: 2024-08-07 17:22
 slug: "131"
 title: 使用 GitHub Actions 将 Obsidian 笔记同步到jekyll博客
