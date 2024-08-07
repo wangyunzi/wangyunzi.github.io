@@ -1,8 +1,12 @@
 name: Sync_Obsidian
 
 on:
-  repository_dispatch:
-    types: [sync_from_obsidian]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch to deploy'
+        required: true
+        default: 'master'
 
 jobs:
   sync:
