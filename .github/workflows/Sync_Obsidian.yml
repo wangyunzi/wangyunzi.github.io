@@ -1,14 +1,8 @@
 name: Sync_Obsidian
 
 on:
-  schedule:
-    - cron: '0 * * * *'  # 每小时运行一次
-  workflow_dispatch:
-    inputs:
-      ref:
-        description: 'Branch to deploy'
-        required: true
-        default: 'master'
+  repository_dispatch:
+    types: [sync_from_obsidian]
 
 jobs:
   sync:
@@ -20,14 +14,14 @@ jobs:
       with:
         repository: wangyunzi/myob
         path: myob
-        token: ${{ secrets.OBSIDIAN_REPO_TOKEN }}
+        token: ${{ secrets.PAT_TOKEN }}
 
     - name: Checkout blog repository
       uses: actions/checkout@v3
       with:
         repository: wangyunzi/wangyunzi.github.io
         path: wangyunzi.github.io
-        token: ${{ secrets.BLOG_REPO_TOKEN }}
+        token: ${{ secrets.PAT_TOKEN }}
 
     - name: List directories for debugging
       run: |
