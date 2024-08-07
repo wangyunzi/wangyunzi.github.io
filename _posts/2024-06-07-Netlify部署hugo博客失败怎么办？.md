@@ -3,7 +3,7 @@ categories: 博客
 tags: ["学习"]
 pstatus: 已发布
 ptype: posts
-date: 2024-06-07 23:34:00 +0800 +0800
+date: 2024-06-07 23:34:00 +0800
 slug: "125"
 id: 81e6f110-1ea2-407c-9799-c78f18f1e3b9
 title: Netlify部署hugo博客失败怎么办？
