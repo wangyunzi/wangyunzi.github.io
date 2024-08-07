@@ -14,30 +14,37 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: wangyunzi/myob
-        path: obsidian-repo
-        token: ${{ secrets.OBSIDIAN_REPO_TOKEN }} # 如果使用 PAT，请确保此 token 设置正确
-    
+        path: myob
+        token: ${{ secrets.OBSIDIAN_REPO_TOKEN }}
+
     - name: Checkout blog repository
       uses: actions/checkout@v3
       with:
         repository: wangyunzi/wangyunzi.github.io
-        path: blog-repo
-        token: ${{ secrets.BLOG_REPO_TOKEN }} # 如果使用 PAT，请确保此 token 设置正确
+        path: wangyunzi.github.io
+        token: ${{ secrets.BLOG_REPO_TOKEN }}
 
-    - name: Sync _page folder
+    - name: List directories for debugging
       run: |
-        rsync -av --delete obsidian-repo/_page/ blog-repo/_page/
-        cd blog-repo
+        echo "Listing myob"
+        ls -R myob
+        echo "Listing wangyunzi.github.io"
+        ls -R wangyunzi.github.io
+
+    - name: Sync _pages folder
+      run: |
+        rsync -av --delete myob/日记本/_pages/ wangyunzi.github.io/_pages/
+        cd wangyunzi.github.io
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git add _page
-        git commit -m "Sync _page from Obsidian repository" || echo "No changes in _page"
+        git add _pages
+        git commit -m "Sync _pages from Obsidian repository" || echo "No changes in _pages"
         cd -
 
     - name: Sync _album folder
       run: |
-        rsync -av --delete obsidian-repo/_album/ blog-repo/_album/
-        cd blog-repo
+        rsync -av --delete myob/日记本/_album/ wangyunzi.github.io/_album/
+        cd wangyunzi.github.io
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
         git add _album
@@ -46,8 +53,8 @@ jobs:
 
     - name: Sync _posts folder
       run: |
-        rsync -av --delete obsidian-repo/_posts/ blog-repo/_posts/
-        cd blog-repo
+        rsync -av --delete myob/日记本/_posts/ wangyunzi.github.io/_posts/
+        cd wangyunzi.github.io
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
         git add _posts
@@ -56,5 +63,5 @@ jobs:
 
     - name: Push changes
       run: |
-        cd blog-repo
+        cd wangyunzi.github.io
         git push
