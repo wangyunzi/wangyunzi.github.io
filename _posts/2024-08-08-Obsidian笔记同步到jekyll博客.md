@@ -151,6 +151,7 @@ jobs:
 1. 进入你的 Obsidian 仓库（`wangyunzi/myob`）。
 2. 创建一个新的文件夹 `.github/workflows`。
 3. 在该文件夹中创建一个名为 `Trigger_Sync.yml` 的文件，内容如下：
+
 ```yaml
 name: Notify Sync_Obsidian
 
@@ -176,6 +177,7 @@ jobs:
           });
 
 ```
+
 文件说明：当obsidian出现push动作的时候就会触发这个文件，继而触发上面一个action动作。
 
 最后，自动化obsidian写作就完成了，在obsidian中写好文章或者其他页面，然后git push到github仓库，就会触发后面的实现发布博客。
