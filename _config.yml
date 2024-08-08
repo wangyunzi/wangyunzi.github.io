@@ -86,6 +86,7 @@ plugins:
     - jekyll-sitemap
     - jekyll-fetch-notion
     - jekyll-seo-tag
+    
 
 
 default_thumbnails:

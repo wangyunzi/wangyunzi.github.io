@@ -71,13 +71,14 @@ figcaption {
 
 ul,
 ol {
-  margin-left: 60px;
+  margin-left: 30px; /* 调整左边距 */
 }
 
 li>ul,
 li>ol {
-  margin-bottom: 0;
+  margin-bottom: 0; /* 保持底边距 */
 }
+
 
 h1,
 h2,
