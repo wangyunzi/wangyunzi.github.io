@@ -250,8 +250,9 @@
   }
   
   .post-content {
-    font-family: monospace, monospace;
-    font-size: 1em;
+    /* font-family: monospace, monospace; */
+    font: 1.1rem/1.8rem  Segoe UI, Arial, "Microsoft Yahei", "Noto Sans SC", Helvetica, PingFang SC, sans-serif !important;
+    /* font-size: 1em; */
     margin-bottom: 60px;
     line-height: 2;
     overflow-wrap: break-word; /* 自动换行 */

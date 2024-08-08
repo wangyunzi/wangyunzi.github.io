@@ -50,6 +50,7 @@ defaults:
           share_buttons: true
           disqus: false
           twikoo: false
+          comments: false
     - scope:
           path: "_album"
           type: "album"
