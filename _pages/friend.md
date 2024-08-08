@@ -14,8 +14,7 @@ permalink: /friend/
 
 [杜老师说](https://dusays.com)    杜老师说
 
-[嗜血星空](https://sxxkearth.github.io/)    建工学习者，分享部分个人收藏及笔记记录，
-网址及工具等 
+[嗜血星空](https://sxxkearth.github.io/)    建工学习者，分享部分个人收藏及笔记记录，网址及工具等 
 
 [木木木木木](https://immmmm.com)  
 
@@ -37,8 +36,7 @@ permalink: /friend/
 
 [Dvel's Blog](https://dvel.me/)  Less is More.
 
-[Black Flies](https://www.yyyzyyyz.cn/)  When nothing goes right,just go 
-left.
+[Black Flies](https://www.yyyzyyyz.cn/)  When nothing goes right,just go left.
 
 [风记星辰](https://www.thyuu.com)  分享生活 · 留下感动
 
@@ -52,8 +50,7 @@ left.
 
 [胡涂说](https://hutusi.com/)  任抛星汉归园圃，留取乾坤盛酒囊
 
-[浮云翩迁之间](https://blognas.hwb0307.com) 百代繁华一朝都，谁非过客；千秋明月吹角
-寒，花是主人。
+[浮云翩迁之间](https://blognas.hwb0307.com) 百代繁华一朝都，谁非过客；千秋明月吹角寒，花是主人。
 
 [Echo’s blog](https://www.liveout.cn/)  韶华不为少年留 恨悠悠 几时休
 

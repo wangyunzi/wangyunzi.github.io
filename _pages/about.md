@@ -70,7 +70,7 @@ order: 6
 
 #### 🐱其他
 - 本人不接受除Telegram和email之外的联络
-- 一个wp主题的朋友圈：王云子的朋友圈（不再使用）；感谢[锦](https://kam.space/)
+- 一个wp主题的朋友圈：王云子的朋友圈，感谢[锦](https://kam.space/)
 - 本页面的标签代码是使用的这个小姐姐的项目https://mengru.space/?weeks/2022/24
 - 博客部分网络图片来自[Pixabay](https://pixabay.com/zh/)、[pinterest](https://www.pinterest.com/),若侵权请告知博主，博主将会第一时间删除
 
