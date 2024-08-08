@@ -3,7 +3,7 @@ name: 长街短梦
 description: "此行山高路远，我只剩口袋玫瑰一片。"
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://wangyunzi.com" # the base hostname & protocol for your site
+url: "https://wangyunzi.com" # the base hostname & protocol for your site
 # theme: travelogue
 timezone: "Asia/Shanghai"
 
@@ -16,9 +16,9 @@ kramdown:
   syntax_highlighter: rouge
   
 compress_html:
-  blanklines: true  #其会默认把所有的换行都压缩成一行。因为毕竟大部分 html 语法都不依赖换行。
+  blanklines: false  #其会默认把所有的换行都压缩成一行。因为毕竟大部分 html 语法都不依赖换行。
 highlight:
-  theme: "monokai"  # 或你喜欢的其他主题
+  theme: "coy"  # 或你喜欢的其他主题
   renderer: "html"
 
 
@@ -86,7 +86,7 @@ plugins:
     - jekyll-sitemap
     - jekyll-fetch-notion
     - jekyll-seo-tag
-    
+
 
 
 default_thumbnails:
