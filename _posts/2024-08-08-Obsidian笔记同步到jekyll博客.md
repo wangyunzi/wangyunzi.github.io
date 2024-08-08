@@ -117,6 +117,7 @@ jobs:
         git push
 ```
 文件说明：这个文件的作用就是把你想要从obsidian里面同步的特定文件同步至博客仓库，`myob/日记本/posts/` 这样的代表obsidian里面的文件夹，`wangyunzi.github.io/_posts/`代表博客里面的文件夹，可以同步多个文件夹，需保证文件存在且路径正确，否则会报错。鉴于昨天测试的时候发现jekyll出现文章时间问题，也就是obsidian同步过去的文章时间不是在东八区，而是在东七区，我也不知道怎么回事，导致jekyll的文章时间在未来时刻，也就是不会生成文章，建议将格式写成 `date: "2024-08-08 08:18:00"` 或者 `date: 2024-08-08 08:18:00 +0800 +0800` , 这样需要把`Sync_Obsidian.yml`文件里面转换时间的格式去掉，否则就会在同步的时候检测时间格式，并且转换成加上时区的格式。`OBSIDIAN_REPO_TOKEN`和 `BLOG_REPO_TOKEN`需要勾选正确的权限，以及设置在`wangyunzi.github.io`仓库中。
+
 4. 继续在该文件夹下面创建一个名为 `Sync_Trigger.yml` 的文件，内容如下：
 ```yaml
 name: Trigger Sync Obsidian
