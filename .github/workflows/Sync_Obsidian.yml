@@ -36,7 +36,7 @@ jobs:
 
     - name: Sync _pages folder
       run: |
-        rsync -av --delete myob/日记本/_pages/ wangyunzi.github.io/_pages/
+        rsync -av --delete myob/日记本/pages/ wangyunzi.github.io/_pages/
         cd wangyunzi.github.io
         find _pages -name "*.md" -exec sed -i -E '
           # ISO 8601格式（例如 2024-08-07T16:00:00）
@@ -56,7 +56,7 @@ jobs:
 
     - name: Sync _album folder
       run: |
-        rsync -av --delete myob/日记本/_album/ wangyunzi.github.io/_album/
+        rsync -av --delete myob/日记本/album/ wangyunzi.github.io/_album/
         cd wangyunzi.github.io
         find _album -name "*.md" -exec sed -i -E '
           # ISO 8601格式（例如 2024-08-07T16:00:00）
@@ -76,7 +76,7 @@ jobs:
 
     - name: Sync _posts folder
       run: |
-        rsync -av --delete myob/日记本/_posts/ wangyunzi.github.io/_posts/
+        rsync -av --delete myob/日记本/posts/ wangyunzi.github.io/_posts/
         cd wangyunzi.github.io
         find _posts -name "*.md" -exec sed -i -E '
           # ISO 8601格式（例如 2024-08-07T16:00:00）
