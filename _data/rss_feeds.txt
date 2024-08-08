@@ -30,3 +30,4 @@ https://blog.cuger.cn/atom.xml
 https://wenderfeng.top/rss/feed.xml
 https://lms.pub/feed
 https://tianheg.co/index.xml
+https://lhasa.icu/rss.xml
