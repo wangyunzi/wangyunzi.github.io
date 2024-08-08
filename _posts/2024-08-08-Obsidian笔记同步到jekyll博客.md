@@ -5,9 +5,7 @@ tags:
   - jekyll
 date: "2024-08-08 08:18:00"
 slug: "132"
-title: 测试文章
-thumb: 
-backgrounds:
+title: Obsidian笔记同步到jekyll博客
 ---
 
 本来这篇文章应该在昨天就写好，但是鉴于自己流程写的有点乱加上最后非要请AI 帮我折腾一下就导致出现问题了，然后自己重新慢慢开始部署一番，终于才算把流程弄好。
