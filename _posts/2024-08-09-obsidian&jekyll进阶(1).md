@@ -96,4 +96,5 @@ backgrounds:
 
 &nbsp;&nbsp;演示视频如下：
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112931903767041&bvid=BV18gYgeXEdQ&cid=500001643783998&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112931903767041&bvid=BV18gYgeXEdQ&cid=500001643783998&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="450" height="450"></iframe>
+
