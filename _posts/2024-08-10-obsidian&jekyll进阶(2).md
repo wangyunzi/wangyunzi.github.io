@@ -96,7 +96,7 @@ backgrounds:
 2. 确保 YAML 内容正确格式化：代码生成的 YAML 头部确保在 Obsidian 中能够被正确识别。
 
 演示视频如下：
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112936148337403&bvid=BV1ndYVeUESs&cid=500001644542130&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="180%"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112936148337403&bvid=BV1ndYVeUESs&cid=500001644542130&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="3%"></iframe>
 
 &emsp;&emsp;此版本应能在 Obsidian 的 QuickAdd 插件中顺利运行，并创建带有 YAML 头部的新笔记文件。
 
