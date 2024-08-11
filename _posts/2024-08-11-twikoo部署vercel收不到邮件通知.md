@@ -14,7 +14,7 @@ backgrounds:
 
 &emsp;&emsp;最后都已经删除了twikoo的相关文件了，上网搜索了之后发现了一个最佳答案怀着激动的心有重新设置一遍，终于成功，感谢这位大佬发布的解惑。
 
-解决方法：进入 Settings - Deployment Protection，设置 Vercel Authentication 为 Disabled，并 Save。
+&emsp;&emsp;解决方法：进入 Settings - Deployment Protection，设置 Vercel Authentication 为 Disabled，并 Save。
 
 相关链接：
 - [vercel部署twikoo后评论收不到通知邮件问题解决方法](https://leolin66.top/article/twikoo_email_problem)
