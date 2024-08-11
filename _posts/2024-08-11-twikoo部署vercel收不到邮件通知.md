@@ -21,3 +21,4 @@ backgrounds:
 - [配置完成，测试邮件收发正常，但是正常评论的时候即发不出去也收不到提醒 #625](https://github.com/twikoojs/twikoo/issues/625)
 - [System Environment Variables Overview](https://vercel.com/docs/projects/environment-variables/system-environment-variables)
 
+ps：这个twikoo是不是有点网络问题，我最开始链接家里的移动WiFi登录不上，而且导入的评论什么的也没有了，换成自己手机热点一下就可以了，真真是怪哉！最终发现，额，如果是美国ip可能就连接不上而且看不到评论。
