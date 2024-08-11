@@ -54,9 +54,16 @@ module.exports = async (params) => {
 
     // 让用户输入标题
     const userTitle = await quickAddApi.inputPrompt("请输入标题");
+
+    // 如果用户取消输入标题，则终止脚本执行
+    if (!userTitle) {
+        new Notice('操作已取消，未创建新笔记。');
+        return;
+    }
+
     const currentDate = new Date().toISOString().split('T')[0];
 
-    // 设置 YAML 头部内容，date 字段添加双引号，title 仅包括用户输入的标题
+    // 设置 YAML 头部内容，确保 date 字段始终用双引号包裹
     const yamlContent = `---
 categories:
 - 
@@ -88,6 +95,7 @@ backgrounds:
         new Notice('Failed to create note. Please check the folder path and permissions.');
     }
 };
+
 
 ```
 
