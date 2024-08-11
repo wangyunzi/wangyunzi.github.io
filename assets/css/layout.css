@@ -303,6 +303,7 @@
     border: 5px solid white; /* 添加白色边框，宽度为 5px */
     box-sizing: border-box; /* 确保边框不会影响图片的实际宽度 */
   }
+
   
   @media screen and (max-width: 800px) {
     .post-content h2 {

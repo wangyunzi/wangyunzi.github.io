@@ -76,6 +76,47 @@ ul.album-list p {
         width: calc(100% - 20px); /* One item per row on very small screens */
     }
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1; /* 强制为正方形 */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.gallery figure {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .gallery figure {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery figure {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
 </style>
 
 <ul class="album-list">
