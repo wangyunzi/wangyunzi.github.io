@@ -1256,3 +1256,5 @@
 
 [Sat Aug 17 11:21:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 1/3: Failed to detect feed type
 
+[Sat Aug 17 11:21:2024] [Get RSS error] https://lisenhui.cn/rss.xml: Attempt 1/3: Get "https://lisenhui.cn/rss.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
