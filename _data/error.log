@@ -1654,3 +1654,5 @@
 
 [Tue Aug 20 17:22:2024] [Failed to parse RSS] https://www.bio-w.cn/feed: Failed to detect feed type
 
+[Tue Aug 20 17:23:2024] [Failed to parse RSS] https://1900.live/rss.xml: XML syntax error on line 1: unexpected EOF in CDATA section
+
