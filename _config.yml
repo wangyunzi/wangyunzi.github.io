@@ -81,7 +81,7 @@ notion:
       # sorts: [{ "timestamp": "created_time", "direction": "ascending" }]
 
 plugins:
-    - jekyll-feed
+    # - jekyll-feed
     - jekyll-paginate
     - jekyll-sitemap
     - jekyll-fetch-notion

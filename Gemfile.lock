@@ -131,7 +131,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-feed (~> 0.12)
   jekyll-fetch-notion
   jekyll-paginate
   jekyll-seo-tag
