@@ -1942,3 +1942,5 @@
 
 [Thu Aug 22 11:23:2024] [Failed to parse RSS] https://www.bio-w.cn/feed: Failed to detect feed type
 
+[Thu Aug 22 11:23:2024] [Failed to parse RSS] https://blog.leonus.cn/atom.xml: XML syntax error on line 1: unexpected EOF in CDATA section
+
