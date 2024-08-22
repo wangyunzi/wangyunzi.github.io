@@ -1960,3 +1960,5 @@
 
 [Thu Aug 22 14:28:2024] [Failed to fetch RSS] https://jingxin18.cn/feed: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
 
+[Thu Aug 22 14:28:2024] [Failed to parse RSS] https://blog.leonus.cn/atom.xml: XML syntax error on line 1: unexpected EOF in CDATA section
+
