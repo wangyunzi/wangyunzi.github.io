@@ -1924,3 +1924,5 @@
 
 [Thu Aug 22 11:22:2024] [Parse RSS error] https://blog.leonus.cn/atom.xml: Attempt 1/3: XML syntax error on line 1: unexpected EOF in CDATA section
 
+[Thu Aug 22 11:22:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 2/3: Failed to detect feed type
+
