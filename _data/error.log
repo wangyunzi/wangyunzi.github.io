@@ -2032,3 +2032,5 @@
 
 [Fri Aug 23 02:27:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 3/3: Failed to detect feed type
 
+[Fri Aug 23 02:27:2024] [Failed to parse RSS] https://www.shifeiti.com/atom.xml: Failed to detect feed type
+
