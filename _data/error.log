@@ -2234,3 +2234,5 @@
 
 [Sat Aug 24 14:26:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Sat Aug 24 14:26:2024] [Get RSS error] https://hutusi.com/feed.xml: Attempt 2/3: Get "https://hutusi.com/feed.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-08-24T06:26:57Z is after 2024-08-23T23:59:59Z
+
