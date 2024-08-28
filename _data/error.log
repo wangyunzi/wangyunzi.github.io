@@ -2820,3 +2820,5 @@
 
 [Wed Aug 28 23:22:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 3/3: Failed to detect feed type
 
+[Wed Aug 28 23:22:2024] [Parse RSS error] https://www.liveout.cn/feed: Attempt 3/3: XML syntax error on line 1: unexpected EOF in CDATA section
+
