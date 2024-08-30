@@ -49,6 +49,22 @@ figure {
   margin-bottom: 30px;
 }
 
+/* 分割线 */
+hr {
+  display: block;
+  margin: 0.5em auto;
+  width: max-content;
+  text-align: center;
+  border: none;
+  font-size: 24px;
+  letter-spacing: 10px; /* 调整点之间的距离 */
+  line-height: 1; /* 控制点的垂直居中 */
+}
+
+hr::before {
+  content: '···'; /* 用三个点替换原本的水平线 */
+}
+
 /**
  * Images
  */
