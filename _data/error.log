@@ -3206,3 +3206,5 @@
 
 [Sat Aug 31 14:26:2024] [Get RSS error] https://wenderfeng.top/rss/feed.xml: Attempt 1/3: Get "https://wenderfeng.top/rss/feed.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Sat Aug 31 14:26:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 2/3: Failed to detect feed type
+
