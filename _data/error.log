@@ -3354,3 +3354,5 @@
 
 [Sun Sep 1 20:37:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Sun Sep 1 20:37:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 2/3: Failed to detect feed type
+
