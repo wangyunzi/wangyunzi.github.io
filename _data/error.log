@@ -3570,3 +3570,5 @@
 
 [Tue Sep 3 09:36:2024] [Get RSS error] https://blog.cuger.cn/atom.xml: Attempt 1/3: Get "https://blog.cuger.cn/atom.xml": read tcp 10.1.0.54:41906->60.28.220.195:443: read: connection reset by peer
 
+[Tue Sep 3 09:36:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 1/3: Failed to detect feed type
+
