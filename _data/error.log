@@ -3598,3 +3598,5 @@
 
 [Tue Sep 3 11:24:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 2/3: Failed to detect feed type
 
+[Tue Sep 3 11:24:2024] [Parse RSS error] https://1900.live/rss.xml: Attempt 2/3: XML syntax error on line 1: unexpected EOF in CDATA section
+
