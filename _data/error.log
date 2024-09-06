@@ -4000,3 +4000,5 @@
 
 [Fri Sep 6 09:37:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 3/3: Failed to detect feed type
 
+[Fri Sep 6 09:38:2024] [Failed to parse RSS] https://blog.sakurasep.site/atom.xml: Failed to detect feed type
+
