@@ -4516,3 +4516,5 @@
 
 [Mon Sep 9 17:23:2024] [Get RSS error] https://blog.sakurasep.site/atom.xml: Attempt 1/3: Get "https://blog.sakurasep.site/atom.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Mon Sep 9 17:23:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 2/3: Failed to detect feed type
+
