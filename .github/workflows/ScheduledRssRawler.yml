@@ -2,8 +2,8 @@ name: ScheduledRssRawler
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
-  workflow_dispatch:
+    - cron: '0 */3 * * *'  # 每 3 小时执行一次
+  workflow_dispatch:  # 允许手动触发
 
 jobs:
   build:
@@ -20,14 +20,23 @@ jobs:
 
     - name: Install dependencies
       run: go mod tidy
-      working-directory: ./api/GrabLatestRSS
+      working-directory: ./api/_GrabLatestRSS
 
     - name: Build
       run: go build -o main
-      working-directory: ./api/GrabLatestRSS
+      working-directory: ./api/_GrabLatestRSS
 
     - name: Run Go program
       env:
         TOKEN: ${{ secrets.TOKEN }}
-      run: ./main
-      working-directory: ./api/GrabLatestRSS
+      run: |
+        ./main
+      working-directory: ./api/_GrabLatestRSS
+      continue-on-error: false  # 如果 Go 程序失败，将使工作流失败
+
+    - name: Upload logs
+      if: failure()  # 仅在工作流失败时上传日志
+      uses: actions/upload-artifact@v3
+      with:
+        name: rss-logs
+        path: ./api/_GrabLatestRSS/logs/  # 确保你在 Go 程序中有生成日志文件
