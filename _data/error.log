@@ -5078,3 +5078,5 @@
 
 [Tue Sep 17 11:24:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 3/3: Failed to detect feed type
 
+[Tue Sep 17 11:24:2024] [Failed to fetch RSS] https://jingxin18.cn/feed: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
+
