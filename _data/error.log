@@ -5214,3 +5214,5 @@
 
 [Wed Sep 18 09:39:2024] [Get RSS error] https://www.jdeal.cn/feed: Attempt 3/3: Get "https://www.jdeal.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Wed Sep 18 09:39:2024] [Failed to fetch RSS] https://www.jdeal.cn/feed: Get "https://www.jdeal.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
