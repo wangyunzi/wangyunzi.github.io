@@ -74,7 +74,7 @@ permalink: /friend/
 
 [wenderfeng](https://wenderfeng.top/) Step by step
 
-[云晓晨CatchYun](https://blog.catchyun.com/) 未来路远 • 勿忘初心
+[云晓晨CatchYXC](https://www.catchyxc.com/) 未来路远 • 勿忘初心
 
 <h3>友链要求</h3>
 
