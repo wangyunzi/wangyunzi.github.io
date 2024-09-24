@@ -6384,3 +6384,5 @@
 
 [Wed Sep 25 05:20:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 3/3: Failed to detect feed type
 
+[Wed Sep 25 05:20:2024] [Failed to parse RSS] https://www.shifeiti.com/atom.xml: Failed to detect feed type
+
