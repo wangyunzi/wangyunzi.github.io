@@ -6856,3 +6856,5 @@
 
 [Sat Sep 28 05:20:2024] [Failed to parse RSS] https://www.frytea.com/atom.xml: Failed to detect feed type
 
+[Sat Sep 28 05:20:2024] [Failed to parse RSS] https://blog.sakurasep.site/atom.xml: Failed to detect feed type
+
