@@ -6864,3 +6864,5 @@
 
 [Sat Sep 28 09:41:2024] [Get RSS error] https://www.shephe.com/feed: Attempt 1/3: Get "https://www.shephe.com/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Sat Sep 28 09:41:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 2/3: Failed to detect feed type
+
