@@ -6946,3 +6946,5 @@
 
 [Sat Sep 28 20:39:2024] [Parse RSS error] https://lms.pub/feed: Attempt 3/3: Failed to detect feed type
 
+[Sat Sep 28 20:39:2024] [Failed to parse RSS] https://lms.pub/feed: Failed to detect feed type
+
