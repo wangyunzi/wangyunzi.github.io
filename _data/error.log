@@ -6926,3 +6926,25 @@
 
 [Sat Sep 28 17:21:2024] [Failed to parse RSS] https://blog.sakurasep.site/atom.xml: Failed to detect feed type
 
+[Sat Sep 28 20:38:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 1/3: Failed to detect feed type
+
+[Sat Sep 28 20:38:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 1/3: Failed to detect feed type
+
+[Sat Sep 28 20:38:2024] [Get RSS error] https://lms.pub/feed: Attempt 1/3: Get "https://lms.pub/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
+[Sat Sep 28 20:38:2024] [Get RSS error] https://jingxin18.cn/feed: Attempt 2/3: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
+
+[Sat Sep 28 20:38:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 2/3: Failed to detect feed type
+
+[Sat Sep 28 20:39:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 3/3: Failed to detect feed type
+
+[Sat Sep 28 20:39:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 3/3: Failed to detect feed type
+
+[Sat Sep 28 20:39:2024] [Parse RSS error] https://lms.pub/feed: Attempt 2/3: Failed to detect feed type
+
+[Sat Sep 28 20:39:2024] [Failed to parse RSS] https://blog.sakurasep.site/atom.xml: Failed to detect feed type
+
+[Sat Sep 28 20:39:2024] [Parse RSS error] https://lms.pub/feed: Attempt 3/3: Failed to detect feed type
+
+[Sat Sep 28 20:39:2024] [Failed to parse RSS] https://lms.pub/feed: Failed to detect feed type
+
