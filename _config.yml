@@ -90,12 +90,12 @@ plugins:
 
 
 default_thumbnails:
-  - https://cdn.pixabay.com/photo/2023/11/14/20/08/woman-8388428_1280.jpg
-  - https://cdn.pixabay.com/photo/2024/02/16/19/22/green-parrot-8578207_1280.jpg
-  - https://cdn.pixabay.com/photo/2023/03/14/12/04/flowers-7852194_1280.jpg
-  - https://cdn.pixabay.com/photo/2023/10/11/03/33/door-8307616_1280.jpg
-  - https://cdn.pixabay.com/photo/2024/06/22/14/51/sea-8846477_1280.jpg
-  - https://cdn.pixabay.com/photo/2024/02/19/08/35/sailboat-8582847_1280.jpg
-  - https://cdn.pixabay.com/photo/2024/03/13/17/57/sea-8631493_1280.jpg
-  - https://cdn.pixabay.com/photo/2023/11/16/22/35/church-8393259_1280.jpg
-  - https://cdn.pixabay.com/photo/2024/05/09/17/24/shih-tzu-8751508_1280.jpg
+  - https://blog.wangyunzi.com/config/cover/church-1280.webp
+  - https://blog.wangyunzi.com/config/cover/door.webp
+  - https://blog.wangyunzi.com/config/cover/flowers.webp
+  - https://blog.wangyunzi.com/config/cover/green-parrot.webp
+  - https://blog.wangyunzi.com/config/cover/sailboat.webp
+  - https://blog.wangyunzi.com/config/cover/sea-1280.webp
+  - https://blog.wangyunzi.com/config/cover/sea.webp
+  - https://blog.wangyunzi.com/config/cover/shih-tzu-1280.webp
+  - https://blog.wangyunzi.com/config/cover/woman.webp
