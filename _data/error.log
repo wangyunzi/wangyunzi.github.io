@@ -7392,3 +7392,5 @@
 
 [Tue Oct 1 14:32:2024] [Failed to parse RSS] https://www.frytea.com/atom.xml: Failed to detect feed type
 
+[Tue Oct 1 14:33:2024] [Get RSS error] https://www.shephe.com/feed: Attempt 3/3: Get "https://www.shephe.com/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
