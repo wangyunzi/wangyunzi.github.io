@@ -7774,3 +7774,5 @@
 
 [Fri Oct 4 02:29:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 3/3: Failed to detect feed type
 
+[Fri Oct 4 02:29:2024] [Get RSS error] https://www.shephe.com/feed: Attempt 2/3: Get "https://www.shephe.com/feed/": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
