@@ -7808,3 +7808,5 @@
 
 [Fri Oct 4 05:20:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 3/3: Failed to detect feed type
 
+[Fri Oct 4 05:20:2024] [Parse RSS error] https://www.liveout.cn/feed: Attempt 3/3: XML syntax error on line 1: unexpected EOF in CDATA section
+
