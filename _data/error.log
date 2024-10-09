@@ -8552,3 +8552,5 @@
 
 [Wed Oct 9 09:42:2024] [Get RSS error] https://jingxin18.cn/feed: Attempt 3/3: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
 
+[Wed Oct 9 09:42:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 3/3: Failed to detect feed type
+
