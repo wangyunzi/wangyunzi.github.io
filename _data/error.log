@@ -9316,3 +9316,5 @@
 
 [Sun Oct 13 02:27:2024] [Failed to fetch RSS] https://www.shephe.com/feed: Get "https://www.shephe.com/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Sun Oct 13 02:27:2024] [Failed to fetch RSS] https://blog.el9.cn/feed: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
