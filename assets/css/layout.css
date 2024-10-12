@@ -358,7 +358,7 @@
     }
   }
   
-  .post-meta .meta:before {
+  .post-meta .meta::before {
     background: #e74c3c;
     content: "";
     display: block;

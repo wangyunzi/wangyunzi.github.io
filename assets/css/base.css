@@ -145,7 +145,7 @@ blockquote {
     white-space: pre-line;
   }
   
-  &:before {
+  &::before {
     content: '“';
     display: block;
     font-family: times, sans-serif;

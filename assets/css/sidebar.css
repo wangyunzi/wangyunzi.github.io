@@ -35,7 +35,7 @@
     transform: translateX(-50%) translateY(-50%);
   }
   
-  .sb-toggle-left .nav-icon:after, .sb-toggle-left .nav-icon:before {
+  .sb-toggle-left .nav-icon:after, .sb-toggle-left .nav-icon::before {
     background: #fdfdfd;
     box-shadow: inherit;
     content: '';
@@ -46,7 +46,7 @@
     width: 100%;
   }
   
-  .sb-toggle-left .nav-icon:before {
+  .sb-toggle-left .nav-icon::before {
     transform: translateY(-8px);
   }
   
