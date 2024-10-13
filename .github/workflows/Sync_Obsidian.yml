@@ -44,7 +44,7 @@ jobs:
 
     - name: Sync _album folder
       run: |
-        rsync -av --delete myob/blog日记本/album/ wangyunzi.github.io/_album/
+        rsync -av --delete myob/日记本/blog/album/ wangyunzi.github.io/_album/
         cd wangyunzi.github.io
         find _album -name "*.md" -exec sed -i -E '
           s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})([+-][0-9]{2}:[0-9]{2}|)/date: \1 \2 +0800/
