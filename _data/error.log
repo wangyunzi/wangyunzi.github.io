@@ -9576,3 +9576,5 @@
 
 [Mon Oct 14 05:20:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Mon Oct 14 05:20:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 2/3: Failed to detect feed type
+
