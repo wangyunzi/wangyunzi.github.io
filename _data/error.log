@@ -9750,3 +9750,5 @@
 
 [Tue Oct 15 02:29:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 2/3: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Tue Oct 15 02:30:2024] [Failed to parse RSS] https://www.frytea.com/atom.xml: Failed to detect feed type
+
