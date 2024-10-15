@@ -9940,3 +9940,5 @@
 
 [Tue Oct 15 23:24:2024] [Failed to fetch RSS] https://www.liveout.cn/feed: Get "https://www.liveout.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-15T15:23:49Z is after 2024-10-15T15:10:38Z
 
+[Tue Oct 15 23:24:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 3/3: Get "https://blog.el9.cn/feed": dial tcp 124.221.166.181:443: i/o timeout (Client.Timeout exceeded while awaiting headers)
+
