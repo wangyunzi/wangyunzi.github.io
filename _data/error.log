@@ -10046,3 +10046,5 @@
 
 [Wed Oct 16 11:29:2024] [Failed to parse RSS] https://www.bio-w.cn/feed: Failed to detect feed type
 
+[Wed Oct 16 11:29:2024] [Failed to fetch RSS] https://www.liveout.cn/feed: Get "https://www.liveout.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-16T03:29:32Z is after 2024-10-15T15:10:38Z
+
