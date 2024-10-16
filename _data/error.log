@@ -10154,3 +10154,5 @@
 
 [Wed Oct 16 23:23:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Wed Oct 16 23:23:2024] [Get RSS error] https://www.liveout.cn/feed: Attempt 2/3: Get "https://www.liveout.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-16T15:23:56Z is after 2024-10-15T15:10:38Z
+
