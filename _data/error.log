@@ -10096,3 +10096,5 @@
 
 [Wed Oct 16 17:24:2024] [Get RSS error] https://www.liveout.cn/feed: Attempt 2/3: Get "https://www.liveout.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-16T09:24:12Z is after 2024-10-15T15:10:38Z
 
+[Wed Oct 16 17:24:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 3/3: Failed to detect feed type
+
