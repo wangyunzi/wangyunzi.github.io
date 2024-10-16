@@ -10012,3 +10012,5 @@
 
 [Wed Oct 16 09:44:2024] [Failed to fetch RSS] https://www.liveout.cn/feed: Get "https://www.liveout.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-16T01:44:47Z is after 2024-10-15T15:10:38Z
 
+[Wed Oct 16 09:45:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 3/3: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
