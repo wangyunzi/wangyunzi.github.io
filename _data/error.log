@@ -10284,3 +10284,5 @@
 
 [Thu Oct 17 11:27:2024] [Failed to parse RSS] https://blog.sakurasep.site/atom.xml: Failed to detect feed type
 
+[Thu Oct 17 11:27:2024] [Failed to fetch RSS] https://www.liveout.cn/feed: Get "https://www.liveout.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-17T03:27:27Z is after 2024-10-15T15:10:38Z
+
