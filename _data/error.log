@@ -10974,3 +10974,5 @@
 
 [Sun Oct 20 20:40:2024] [Get RSS error] https://www.sulvblog.cn/index.xml: Attempt 2/3: Get "https://www.sulvblog.cn/index.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Sun Oct 20 20:40:2024] [Failed to fetch RSS] https://jingxin18.cn/feed: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
+
