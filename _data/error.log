@@ -11204,3 +11204,5 @@
 
 [Mon Oct 21 23:24:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 2/3: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Mon Oct 21 23:25:2024] [Failed to parse RSS] https://www.bio-w.cn/feed: Failed to detect feed type
+
