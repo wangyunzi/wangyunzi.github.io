@@ -11554,3 +11554,5 @@
 
 [Wed Oct 23 14:30:2024] [Get RSS error] https://jingxin18.cn/feed: Attempt 2/3: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
 
+[Wed Oct 23 14:30:2024] [Get RSS error] https://www.yyyzyyyz.cn/atom.xml: Attempt 2/3: Get "https://www.yyyzyyyz.cn/atom.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-23T06:30:59Z is after 2024-10-20T23:59:59Z
+
