@@ -12314,3 +12314,5 @@
 
 [Sun Oct 27 02:27:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Sun Oct 27 02:27:2024] [Get RSS error] https://www.frytea.com/atom.xml: Attempt 3/3: Get "https://www.frytea.com/atom.xml": tls: failed to verify certificate: x509: certificate is valid for *.cdn.myqcloud.com, *.bldimg.com, *.blued.com, *.geetest.com, *.heesay.com, *.jsbchina.cn, *.lof3.xyz, *.rax0mai4.xyz, *.walla-app.com, cdn.myqcloud.com, not www.frytea.com
+
