@@ -12302,3 +12302,5 @@
 
 [Sun Oct 27 02:27:2024] [Get RSS error] https://www.frytea.com/atom.xml: Attempt 1/3: Get "https://www.frytea.com/atom.xml": tls: failed to verify certificate: x509: certificate is valid for *.cdn.myqcloud.com, *.bldimg.com, *.blued.com, *.geetest.com, *.heesay.com, *.jsbchina.cn, *.lof3.xyz, *.rax0mai4.xyz, *.walla-app.com, cdn.myqcloud.com, not www.frytea.com
 
+[Sun Oct 27 02:27:2024] [Get RSS error] https://www.yyyzyyyz.cn/atom.xml: Attempt 1/3: Get "https://www.yyyzyyyz.cn/atom.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-26T18:27:10Z is after 2024-10-20T23:59:59Z
+
