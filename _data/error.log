@@ -12466,3 +12466,5 @@
 
 [Sun Oct 27 17:21:2024] [Failed to parse RSS] https://lms.pub/feed: Failed to detect feed type
 
+[Sun Oct 27 17:21:2024] [Failed to parse RSS] https://www.frytea.com/atom.xml: Failed to detect feed type
+
