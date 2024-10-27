@@ -12470,3 +12470,5 @@
 
 [Sun Oct 27 17:21:2024] [Failed to fetch RSS] https://www.yyyzyyyz.cn/atom.xml: Get "https://www.yyyzyyyz.cn/atom.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-27T09:21:19Z is after 2024-10-20T23:59:59Z
 
+[Sun Oct 27 17:21:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 3/3: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
