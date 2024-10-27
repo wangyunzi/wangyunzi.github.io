@@ -12454,3 +12454,5 @@
 
 [Sun Oct 27 17:21:2024] [Parse RSS error] https://lms.pub/feed: Attempt 2/3: Failed to detect feed type
 
+[Sun Oct 27 17:21:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 2/3: Failed to detect feed type
+
