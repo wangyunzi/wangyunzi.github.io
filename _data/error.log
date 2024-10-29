@@ -290,3 +290,5 @@
 
 [Tue Oct 29 17:24:2024] [Failed to fetch RSS] https://www.yyyzyyyz.cn/atom.xml: Get "https://www.yyyzyyyz.cn/atom.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-29T09:24:09Z is after 2024-10-20T23:59:59Z
 
+[Tue Oct 29 17:24:2024] [Failed to parse RSS] https://www.bio-w.cn/feed: Failed to detect feed type
+
