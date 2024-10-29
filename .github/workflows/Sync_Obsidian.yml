@@ -30,38 +30,52 @@ jobs:
         path: wangyunzi.github.io
         token: ${{ secrets.BLOG_REPO_TOKEN }}
 
-    - name: Verify directory structure
+    - name: Sync _pages folder
       run: |
-        echo "Checking directory structure..."
-        ls myob/日记本/blog/
+        rsync -av --delete myob/日记本/blog/pages/ wangyunzi.github.io/_pages/
+        cd wangyunzi.github.io
+        find _pages -name "*.md" -exec sed -i -E '
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})([+-][0-9]{2}:[0-9]{2}|)/date: \1 \2 +0800/
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})[+-][0-9]{2}:[0-9]{2}/date: \1 \2 +0800/
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2}) ([0-9]{2}:[0-9]{2}:[0-9]{2})/date: \1 \2 +0800/
+        ' {} \;
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add _pages
+        git commit -m "Sync _pages from Obsidian repository" || echo "No changes in _pages"
+        cd -
 
-    - name: Sync folders
+    - name: Sync _album folder
       run: |
-        sync_folder() {
-          local folder=$1
-          if [ -d "myob/日记本/blog/$folder" ]; then
-            rsync -av --delete "myob/日记本/blog/$folder/" "wangyunzi.github.io/$folder/"
-            cd wangyunzi.github.io || exit
-            find $folder -name "*.md" -exec sed -i -E '
-              s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})([+-][0-9]{2}:[0-9]{2}|)/date: \1 \2 +0800/
-              s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})[+-][0-9]{2}:[0-9]{2}/date: \1 \2 +0800/
-              s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2}) ([0-9]{2}:[0-9]{2}:[0-9]{2})/date: \1 \2 +0800/
-            ' {} \;
-            git config user.name "GitHub Actions"
-            git config user.email "actions@github.com"
-            git add $folder
-            git commit -m "Sync $folder from Obsidian repository" || echo "No changes in $folder"
-            cd - || exit
-          else
-            echo "$folder directory does not exist, skipping..."
-          fi
-        }
+        rsync -av --delete myob/日记本/blog/album/ wangyunzi.github.io/_album/
+        cd wangyunzi.github.io
+        find _album -name "*.md" -exec sed -i -E '
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})([+-][0-9]{2}:[0-9]{2}|)/date: \1 \2 +0800/
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})[+-][0-9]{2}:[0-9]{2}/date: \1 \2 +0800/
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2}) ([0-9]{2}:[0-9]{2}:[0-9]{2})/date: \1 \2 +0800/
+        ' {} \;
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add _album
+        git commit -m "Sync _album from Obsidian repository" || echo "No changes in _album"
+        cd -
 
-        for folder in _pages _album _posts; do
-          sync_folder $folder
-        done
+    - name: Sync _posts folder
+      run: |
+        rsync -av --delete myob/日记本/blog/posts/ wangyunzi.github.io/_posts/
+        cd wangyunzi.github.io
+        find _posts -name "*.md" -exec sed -i -E '
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})([+-][0-9]{2}:[0-9]{2}|)/date: \1 \2 +0800/
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})[+-][0-9]{2}:[0-9]{2}/date: \1 \2 +0800/
+          s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2}) ([0-9]{2}:[0-9]{2}:[0-9]{2})/date: \1 \2 +0800/
+        ' {} \;
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add _posts
+        git commit -m "Sync _posts from Obsidian repository" || echo "No changes in _posts"
+        cd -
 
     - name: Push changes
       run: |
-        cd wangyunzi.github.io || exit
-        git push || echo "Failed to push changes. Please check the repository."
+        cd wangyunzi.github.io
+        git push
