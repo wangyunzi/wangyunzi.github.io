@@ -12,8 +12,8 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     concurrency:
-      group: 'sync-obsidian'  # 确保只有一个工作流在运行
-      cancel-in-progress: true  # 如果有新的请求，则取消当前请求
+      group: 'sync-obsidian'
+      cancel-in-progress: true
 
     steps:
     - name: Checkout Obsidian repository
@@ -30,22 +30,31 @@ jobs:
         path: wangyunzi.github.io
         token: ${{ secrets.BLOG_REPO_TOKEN }}
 
+    - name: Verify directory structure
+      run: |
+        echo "Checking directory structure..."
+        ls myob/日记本/blog/
+
     - name: Sync folders
       run: |
         sync_folder() {
           local folder=$1
-          rsync -av --delete myob/日记本/blog/$folder/ wangyunzi.github.io/$folder/
-          cd wangyunzi.github.io || exit
-          find $folder -name "*.md" -exec sed -i -E '
-            s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})([+-][0-9]{2}:[0-9]{2}|)/date: \1 \2 +0800/
-            s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})[+-][0-9]{2}:[0-9]{2}/date: \1 \2 +0800/
-            s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2}) ([0-9]{2}:[0-9]{2}:[0-9]{2})/date: \1 \2 +0800/
-          ' {} \;
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add $folder
-          git commit -m "Sync $folder from Obsidian repository" || echo "No changes in $folder"
-          cd - || exit
+          if [ -d "myob/日记本/blog/$folder" ]; then
+            rsync -av --delete "myob/日记本/blog/$folder/" "wangyunzi.github.io/$folder/"
+            cd wangyunzi.github.io || exit
+            find $folder -name "*.md" -exec sed -i -E '
+              s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})([+-][0-9]{2}:[0-9]{2}|)/date: \1 \2 +0800/
+              s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2})T([0-9]{2}:[0-9]{2}:[0-9]{2})[+-][0-9]{2}:[0-9]{2}/date: \1 \2 +0800/
+              s/date: ([0-9]{4}-[0-9]{2}-[0-9]{2}) ([0-9]{2}:[0-9]{2}:[0-9]{2})/date: \1 \2 +0800/
+            ' {} \;
+            git config user.name "GitHub Actions"
+            git config user.email "actions@github.com"
+            git add $folder
+            git commit -m "Sync $folder from Obsidian repository" || echo "No changes in $folder"
+            cd - || exit
+          else
+            echo "$folder directory does not exist, skipping..."
+          fi
         }
 
         for folder in _pages _album _posts; do
