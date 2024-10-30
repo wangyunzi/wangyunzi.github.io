@@ -604,3 +604,5 @@
 
 [Wed Oct 30 20:43:2024] [Failed to parse RSS] https://www.shifeiti.com/atom.xml: Failed to detect feed type
 
+[Wed Oct 30 20:43:2024] [Failed to fetch RSS] https://www.yyyzyyyz.cn/atom.xml: Get "https://www.yyyzyyyz.cn/atom.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-10-30T12:43:32Z is after 2024-10-20T23:59:59Z
+
