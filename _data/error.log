@@ -446,3 +446,5 @@
 
 [Wed Oct 30 09:44:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 1/3: Failed to detect feed type
 
+[Wed Oct 30 09:44:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 3/3: Failed to detect feed type
+
