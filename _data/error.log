@@ -1242,3 +1242,5 @@
 
 [Sat Nov 2 09:42:2024] [Get RSS error] https://www.yyyzyyyz.cn/atom.xml: Attempt 2/3: Get "https://www.yyyzyyyz.cn/atom.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Sat Nov 2 09:42:2024] [Failed to parse RSS] https://www.shifeiti.com/atom.xml: Failed to detect feed type
+
