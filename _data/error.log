@@ -1254,3 +1254,5 @@
 
 [Sat Nov 2 11:25:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 1/3: Failed to detect feed type
 
+[Sat Nov 2 11:26:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 1/3: Failed to detect feed type
+
