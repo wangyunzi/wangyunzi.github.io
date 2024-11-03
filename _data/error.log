@@ -1516,3 +1516,5 @@
 
 [Sun Nov 3 11:30:2024] [Get RSS error] https://lms.pub/feed: Attempt 3/3: Get "https://lms.pub/feed": dial tcp 111.231.24.152:443: i/o timeout (Client.Timeout exceeded while awaiting headers)
 
+[Sun Nov 3 11:30:2024] [Failed to fetch RSS] https://www.yyyzyyyz.cn/atom.xml: Get "https://www.yyyzyyyz.cn/atom.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
