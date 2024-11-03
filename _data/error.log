@@ -1472,3 +1472,5 @@
 
 [Sun Nov 3 09:49:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 3/3: Failed to detect feed type
 
+[Sun Nov 3 09:50:2024] [Get RSS error] https://www.yyyzyyyz.cn/atom.xml: Attempt 2/3: Get "https://www.yyyzyyyz.cn/atom.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
