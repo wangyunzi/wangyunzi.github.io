@@ -1656,3 +1656,5 @@
 
 [Mon Nov 4 02:28:2024] [Get RSS error] https://www.yyyzyyyz.cn/atom.xml: Attempt 3/3: Get "https://www.yyyzyyyz.cn/atom.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Mon Nov 4 02:29:2024] [Failed to fetch RSS] https://blog.el9.cn/feed: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
