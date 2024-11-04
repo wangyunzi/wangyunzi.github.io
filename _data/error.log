@@ -1812,3 +1812,5 @@
 
 [Mon Nov 4 17:25:2024] [Failed to fetch RSS] https://www.yyyzyyyz.cn/atom.xml: Get "https://www.yyyzyyyz.cn/atom.xml": tls: failed to verify certificate: x509: certificate is valid for *.cdn.myqcloud.com, *.2144.cn, *.2144.com, *.4399.com, *.5054399.com, *.58cdn.com.cn, *.danmu.com, *.dianping.com, *.dpfile.com, *.ffnews.cn, *.file.myqcloud.com, *.flash.2144.com, *.flash.cn, *.image.myqcloud.com, *.img4399.com, *.meituan.net, *.mykeeta.net, *.sogoucdn.com, *.uniqlo.cn, *.video.myqcloud.com, *.vip.cdngot.com, *.vod-qcloud.com, *.vod.myqcloud.com, *.vod2.myqcloud.com, *.wanyabox.com, *.zhongcheng818.com, *.zservey.net, cdn.myqcloud.com, nitrome.com.4399.com, www.miniclip.com.4399pk.com, xpdl999.aiwan4399.com, not www.yyyzyyyz.cn
 
+[Mon Nov 4 17:26:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 3/3: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
