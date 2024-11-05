@@ -2068,3 +2068,5 @@
 
 [Tue Nov 5 20:40:2024] [Failed to fetch RSS] https://jingxin18.cn/feed: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
 
+[Tue Nov 5 20:40:2024] [Failed to parse RSS] https://www.frytea.com/atom.xml: Failed to detect feed type
+
