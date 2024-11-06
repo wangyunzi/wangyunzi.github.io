@@ -2318,3 +2318,5 @@
 
 [Wed Nov 6 23:24:2024] [Failed to fetch RSS] https://lisenhui.cn/rss.xml: Get "https://lisenhui.cn/rss.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Thu Nov 7 02:29:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 1/3: Failed to detect feed type
+
