@@ -2588,3 +2588,5 @@
 
 [Fri Nov 8 05:20:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 3/3: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Fri Nov 8 05:20:2024] [Failed to fetch RSS] https://lisenhui.cn/rss.xml: Get "https://lisenhui.cn/rss.xml": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
