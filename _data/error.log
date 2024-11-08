@@ -2692,3 +2692,5 @@
 
 [Fri Nov 8 17:22:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 1/3: Failed to detect feed type
 
+[Fri Nov 8 17:22:2024] [Get RSS error] https://www.sulvblog.cn/index.xml: Attempt 1/3: Get "https://www.sulvblog.cn/index.xml": dial tcp 119.91.156.178:443: i/o timeout (Client.Timeout exceeded while awaiting headers)
+
