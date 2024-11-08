@@ -2718,3 +2718,5 @@
 
 [Fri Nov 8 17:23:2024] [Failed to fetch RSS] https://blog.el9.cn/feed: Get "https://blog.el9.cn/feed": dial tcp 124.221.166.181:443: i/o timeout (Client.Timeout exceeded while awaiting headers)
 
+[Fri Nov 8 20:41:2024] [Get RSS error] https://jingxin18.cn/feed: Attempt 1/3: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
+
