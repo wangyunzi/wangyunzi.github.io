@@ -2958,3 +2958,5 @@
 
 [Sat Nov 9 17:20:2024] [Failed to fetch RSS] https://www.bio-w.cn/feed: Get "https://www.bio-w.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-11-09T09:20:03Z is after 2024-11-08T23:59:59Z
 
+[Sat Nov 9 17:20:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 3/3: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
