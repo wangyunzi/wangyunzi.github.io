@@ -3074,3 +3074,5 @@
 
 [Sun Nov 10 02:27:2024] [Failed to fetch RSS] https://blog.el9.cn/feed: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Sun Nov 10 05:19:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 1/3: Failed to detect feed type
+
