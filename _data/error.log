@@ -3066,3 +3066,5 @@
 
 [Sun Nov 10 02:26:2024] [Failed to parse RSS] https://blog.sakurasep.site/atom.xml: Failed to detect feed type
 
+[Sun Nov 10 02:26:2024] [Failed to fetch RSS] https://www.bio-w.cn/feed: Get "https://www.bio-w.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-11-09T18:26:32Z is after 2024-11-08T23:59:59Z
+
