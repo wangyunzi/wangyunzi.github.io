@@ -3126,3 +3126,5 @@
 
 [Sun Nov 10 09:47:2024] [Get RSS error] https://www.sulvblog.cn/index.xml: Attempt 3/3: Get "https://www.sulvblog.cn/index.xml": tls: failed to verify certificate: x509: certificate is valid for *.dnspod.cn, dnspod.cn, not www.sulvblog.cn
 
+[Sun Nov 10 09:47:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 2/3: Get "https://blog.el9.cn/feed": dial tcp 124.221.166.181:443: i/o timeout (Client.Timeout exceeded while awaiting headers)
+
