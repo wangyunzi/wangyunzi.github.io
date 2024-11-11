@@ -3566,3 +3566,5 @@
 
 [Mon Nov 11 23:22:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Mon Nov 11 23:22:2024] [Get RSS error] https://www.bio-w.cn/feed: Attempt 2/3: Get "https://www.bio-w.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-11-11T15:22:28Z is after 2024-11-08T23:59:59Z
+
