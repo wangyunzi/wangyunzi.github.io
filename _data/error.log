@@ -3466,3 +3466,5 @@
 
 [Mon Nov 11 14:30:2024] [Get RSS error] https://www.bio-w.cn/feed: Attempt 2/3: Get "https://www.bio-w.cn/feed": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-11-11T06:30:38Z is after 2024-11-08T23:59:59Z
 
+[Mon Nov 11 14:30:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 3/3: Failed to detect feed type
+
