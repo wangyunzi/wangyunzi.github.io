@@ -3572,3 +3572,5 @@
 
 [Mon Nov 11 23:22:2024] [Get RSS error] https://jingxin18.cn/feed: Attempt 3/3: Get "https://jingxin18.cn/feed": tls: failed to verify certificate: x509: certificate is valid for cloudflare-dns.com, *.cloudflare-dns.com, one.one.one.one, not jingxin18.cn
 
+[Mon Nov 11 23:22:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 3/3: Failed to detect feed type
+
