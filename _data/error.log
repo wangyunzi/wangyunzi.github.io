@@ -3858,3 +3858,5 @@
 
 [Wed Nov 13 02:29:2024] [Parse RSS error] https://www.liveout.cn/feed: Attempt 2/3: XML syntax error on line 1: unexpected EOF in CDATA section
 
+[Wed Nov 13 02:29:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 3/3: Failed to detect feed type
+
