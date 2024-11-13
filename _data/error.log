@@ -3934,3 +3934,5 @@
 
 [Wed Nov 13 09:43:2024] [Failed to parse RSS] https://www.shifeiti.com/atom.xml: Failed to detect feed type
 
+[Wed Nov 13 09:43:2024] [Failed to fetch RSS] https://www.sulvblog.cn/index.xml: Get "https://www.sulvblog.cn/index.xml": tls: failed to verify certificate: x509: certificate is valid for *.dnspod.cn, dnspod.cn, not www.sulvblog.cn
+
