@@ -5060,3 +5060,5 @@
 
 [Sun Nov 17 20:40:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Sun Nov 17 20:40:2024] [Get RSS error] https://www.sulvblog.cn/index.xml: Attempt 2/3: Get "https://www.sulvblog.cn/index.xml": tls: failed to verify certificate: x509: certificate is valid for *.dnspod.cn, dnspod.cn, not www.sulvblog.cn
+
