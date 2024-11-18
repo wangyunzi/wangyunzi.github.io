@@ -5286,3 +5286,5 @@
 
 [Mon Nov 18 17:25:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 1/3: Failed to detect feed type
 
+[Mon Nov 18 17:25:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 1/3: Failed to detect feed type
+
