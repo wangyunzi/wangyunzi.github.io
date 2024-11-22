@@ -6404,3 +6404,5 @@
 
 [Fri Nov 22 17:24:2024] [Failed to parse RSS] https://www.bio-w.cn/feed: Failed to detect feed type
 
+[Fri Nov 22 17:24:2024] [Failed to fetch RSS] https://hutusi.com/feed.xml: Get "https://hutusi.com/feed.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-11-22T09:24:42Z is after 2024-11-21T23:59:59Z
+
