@@ -6308,3 +6308,5 @@
 
 [Fri Nov 22 09:49:2024] [Failed to fetch RSS] https://hutusi.com/feed.xml: Get "https://hutusi.com/feed.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-11-22T01:48:59Z is after 2024-11-21T23:59:59Z
 
+[Fri Nov 22 09:49:2024] [Get RSS error] https://blog.el9.cn/feed: Attempt 3/3: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+
