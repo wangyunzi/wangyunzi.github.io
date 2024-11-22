@@ -6342,3 +6342,5 @@
 
 [Fri Nov 22 11:32:2024] [Failed to fetch RSS] https://hutusi.com/feed.xml: Get "https://hutusi.com/feed.xml": tls: failed to verify certificate: x509: certificate has expired or is not yet valid: current time 2024-11-22T03:32:38Z is after 2024-11-21T23:59:59Z
 
+[Fri Nov 22 11:32:2024] [Failed to fetch RSS] https://www.sulvblog.cn/index.xml: Get "https://www.sulvblog.cn/index.xml": tls: failed to verify certificate: x509: certificate is valid for *.dnspod.cn, dnspod.cn, not www.sulvblog.cn
+
