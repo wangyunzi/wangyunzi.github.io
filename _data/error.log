@@ -7292,3 +7292,5 @@
 
 [Tue Nov 26 02:31:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Tue Nov 26 02:31:2024] [Parse RSS error] https://www.liveout.cn/feed: Attempt 2/3: XML syntax error on line 1: unexpected EOF in CDATA section
+
