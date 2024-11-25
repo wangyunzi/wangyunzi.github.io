@@ -7264,3 +7264,5 @@
 
 [Mon Nov 25 23:25:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 3/3: Failed to detect feed type
 
+[Mon Nov 25 23:25:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 3/3: Failed to detect feed type
+
