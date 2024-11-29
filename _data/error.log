@@ -8276,3 +8276,5 @@
 
 [Fri Nov 29 20:46:2024] [Failed to fetch RSS] https://www.sulvblog.cn/index.xml: Get "https://www.sulvblog.cn/index.xml": tls: failed to verify certificate: x509: certificate is valid for *.dnspod.cn, dnspod.cn, not www.sulvblog.cn
 
+[Fri Nov 29 20:46:2024] [Failed to parse RSS] https://www.frytea.com/atom.xml: Failed to detect feed type
+
