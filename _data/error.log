@@ -9118,3 +9118,5 @@
 
 [Tue Dec 3 02:32:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Tue Dec 3 02:32:2024] [Parse RSS error] https://www.shifeiti.com/atom.xml: Attempt 3/3: Failed to detect feed type
+
