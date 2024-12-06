@@ -10060,3 +10060,5 @@
 
 [Fri Dec 6 17:24:2024] [Parse RSS error] https://www.bio-w.cn/feed: Attempt 1/3: Failed to detect feed type
 
+[Fri Dec 6 17:24:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 1/3: Failed to detect feed type
+
