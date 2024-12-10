@@ -11016,3 +11016,5 @@
 
 [Tue Dec 10 09:54:2024] [Failed to parse RSS] https://www.frytea.com/atom.xml: Failed to detect feed type
 
+[Tue Dec 10 09:55:2024] [Failed to parse RSS] https://dusays.com/atom.xml: XML syntax error on line 1: unexpected EOF in CDATA section
+
