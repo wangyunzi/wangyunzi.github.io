@@ -11568,3 +11568,5 @@
 
 [Thu Dec 12 14:33:2024] [Parse RSS error] https://blog.sakurasep.site/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Thu Dec 12 14:33:2024] [Parse RSS error] https://dusays.com/atom.xml: Attempt 2/3: XML syntax error on line 1: unexpected EOF in CDATA section
+
