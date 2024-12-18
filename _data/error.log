@@ -12930,3 +12930,5 @@
 
 [Wed Dec 18 09:49:2024] [Failed to fetch RSS] https://blog.el9.cn/feed: Get "https://blog.el9.cn/feed": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
 
+[Wed Dec 18 11:31:2024] [Get RSS error] https://www.sulvblog.cn/index.xml: Attempt 1/3: Get "https://www.sulvblog.cn/index.xml": dial tcp: lookup www.sulvblog.cn on 127.0.0.53:53: no such host
+
