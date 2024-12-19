@@ -13194,3 +13194,5 @@
 
 [Thu Dec 19 11:32:2024] [Parse RSS error] https://www.frytea.com/atom.xml: Attempt 2/3: Failed to detect feed type
 
+[Thu Dec 19 11:32:2024] [Parse RSS error] https://1900.live/rss.xml: Attempt 2/3: XML syntax error on line 1: unexpected EOF
+
