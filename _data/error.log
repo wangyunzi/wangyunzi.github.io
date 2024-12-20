@@ -13418,3 +13418,5 @@
 
 [Fri Dec 20 09:44:2024] [Failed to fetch RSS] https://www.sulvblog.cn/index.xml: Get "https://www.sulvblog.cn/index.xml": dial tcp: lookup www.sulvblog.cn on 127.0.0.53:53: no such host
 
+[Fri Dec 20 09:44:2024] [Failed to parse RSS] https://www.bio-w.cn/feed: Failed to detect feed type
+
