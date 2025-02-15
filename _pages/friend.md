@@ -60,7 +60,7 @@ permalink: /friend/
 
 [Shixiaocaia](https://shixiaocaia.fun)  去做吧，反正都会后悔。
 
-[小卢](https://b0ae.cn)  个人博客记录日常
+[老卢](https://blog.el9.cn/)  个人博客记录日常
 
 [记忆一隅](https://vlieo.com/)  凡事总需研究，才会明白
 
