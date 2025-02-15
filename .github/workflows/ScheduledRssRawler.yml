@@ -2,7 +2,7 @@ name: ScheduledRssRawler
 
 on:
   schedule:
-    - cron: '0 */3 * * *'  # 每 3 小时执行一次
+    - cron: '0 0 * * *'  # 每天一次，午夜执行
   workflow_dispatch:  # 允许手动触发
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
 
     - name: Upload logs
       if: failure()  # 仅在工作流失败时上传日志
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4  # 使用最新的 v4 版本
       with:
         name: my-artifact-${{ matrix.runs-on }}
         path: ./api/_GrabLatestRSS/logs/  # 确保你在 Go 程序中有生成日志文件
