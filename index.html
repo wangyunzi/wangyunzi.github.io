@@ -20,8 +20,8 @@ home: true
                 </div>
             </a>
 
-            {% if post.thumb %}
-                <img src="{{ post.thumb | prepend: site.baseurl }}" class="post-list-thumb" alt="{{ post.title }}" />
+            {% if post.backgrounds %}
+                <img src="{{ post.backgrounds | prepend: site.baseurl }}" class="post-list-thumb" alt="{{ post.title }}" />
             {% else %}
                 <!-- Use a random default thumbnail if post.thumb is not set -->
                 {% assign random_thumb = site.default_thumbnails | sample %}
