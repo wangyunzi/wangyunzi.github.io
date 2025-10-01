@@ -77,4 +77,5 @@ order: 6
 ![:wangyunzi](https://count.getloli.com/get/@wangyunzi?theme=asoul)
 
 <a href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="https://img.foreverblog.cn/wormhole_4_tp.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"></a>
+
 <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"><img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" style="width:auto;height:32px;"></a> 
