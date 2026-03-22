@@ -1,0 +1,19 @@
+/* ==========================================================================
+   LOADER
+   ========================================================================== */
+.loader {
+  right: 30px;
+  position: fixed;
+  opacity: 0;
+  top: 30px;
+  z-index: 1;
+  transition: all var(--transition-fast);
+}
+
+.loader svg path {
+  fill: var(--color-light);
+}
+
+.loading {
+  opacity: 1;
+}

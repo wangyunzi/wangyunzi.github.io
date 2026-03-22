@@ -1,0 +1,190 @@
+/* Memos timeline */
+#bber {
+  margin-top: 2em;
+  width: 100% !important;
+}
+
+#home-bber {
+  width: 100% !important;
+  flex: 1 1 auto;
+  position: relative;
+  padding-left: 0;
+}
+
+#home-bber .bb-timeline {
+  margin: 0;
+}
+
+#home-bber::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 7px;
+  width: 1px;
+  background: var(--color-border);
+}
+
+#home-bber .bb-timeline ul li {
+  margin-bottom: 1.1rem;
+  padding-left: 24px;
+  position: relative;
+}
+
+#home-bber .bb-timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+#home-bber .bb-timeline ul li .bb-div {
+  position: relative;
+  background: transparent;
+  border: 1px solid rgba(17, 17, 17, 0.05);
+  border-radius: 16px;
+  color: var(--color-text);
+  padding: 0.85rem 1rem 0.95rem;
+  box-shadow: 0 8px 18px rgba(17, 17, 17, 0.04);
+}
+
+#home-bber .bb-timeline ul li .bb-div::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 16px;
+  width: 12px;
+  height: 12px;
+  background: var(--color-surface);
+  border-left: 1px solid rgba(17, 17, 17, 0.05);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.05);
+  border-radius: 0 0 0 2px;
+  transform: rotate(45deg);
+}
+
+#home-bber .bb-timeline ul li .datatime {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+#home-bber .bb-timeline ul li .datatime .hy-time {
+  display: block;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-text-soft);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#home-bber .bb-timeline ul li .datacont {
+  background: transparent;
+  border-radius: 0;
+  color: var(--color-text);
+  padding: 0;
+  font-size: 0.95rem;
+  line-height: 1.9;
+}
+
+#home-bber .bb-timeline ul li .datacont > *:first-child {
+  margin-top: 0;
+}
+
+#home-bber .bb-timeline ul li .datacont > *:last-child {
+  margin-bottom: 0;
+}
+
+#home-bber .bb-timeline ul li .datasource {
+  margin-top: 0.55rem;
+}
+
+#home-bber .bb-timeline ul li .datasource a {
+  background: rgba(17, 17, 17, 0.75);
+  color: var(--color-light);
+  font-size: 0.78rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+}
+
+#home-bber .bb-timeline ul li:last-child .bb-div {
+  padding-bottom: 0;
+}
+
+.bb-timeline {
+  padding: 0;
+  list-style: none;
+}
+
+.bb-timeline ul {
+  padding: 0;
+  margin: 0;
+}
+
+.bb-timeline ul li {
+  position: relative;
+  margin: 0 0 1rem 0;
+  padding-left: 1rem;
+  width: 100%;
+  list-style: none;
+}
+
+.bb-timeline ul li .bb-div {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.bb-timeline ul li .datatime {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.bb-timeline ul li .datatime .hy-time {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.bb-timeline ul li .datacont {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bb-timeline ul li .datacont img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.bb-timeline ul li .tag-span {
+  color: #98c1d9;
+}
+
+.bb-timeline ul li .datasource a {
+  color: #fafafa;
+  background: #3b3d42;
+  padding: 2px 8px;
+  margin: 0 6px 0 0;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.bb-load {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.bb-load button {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  background: none;
+  border: 1px solid #475671;
+  border-radius: 0.5rem;
+  color: #475671;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.bb-load button:hover {
+  background: #475671;
+  color: #fff;
+}

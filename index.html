@@ -1,0 +1,68 @@
+---
+layout: default
+home: true
+home_preview: true
+---
+
+<div class="home home-preview">
+    <div class="home-grid">
+        <section class="home-posts">
+            <ul class="post-list post-list-home">
+                {% for post in site.posts limit:3 %}
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="post-list-link">
+                        <div class="post-list-info">
+                            <h2 class="post-list-title">{{ post.title }}</h2>
+                            <span class="post-list-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+                        </div>
+                    </a>
+
+                    {% if post.backgrounds %}
+                        <img src="{{ post.backgrounds | prepend: site.baseurl }}" class="post-list-thumb" alt="{{ post.title }}" loading="lazy" decoding="async" />
+                    {% else %}
+                        {% assign random_thumb = site.default_thumbnails | sample %}
+                        <img src="{{ random_thumb | prepend: site.baseurl }}" class="post-list-thumb" alt="Default thumbnail" loading="lazy" decoding="async" />
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <aside class="home-memos">
+            <div class="home-memos-inner">
+                <div class="home-section-head">
+                    <h2 class="home-section-title">
+                        <a href="{{ "/memos/" | prepend: site.baseurl }}">瞬间</a>
+                    </h2>
+                </div>
+                <div
+                    id="home-bber"
+                    data-memos-root="true"
+                    data-memos="https://s.dusays.com/"
+                    data-limit="4"
+                    data-creator-id="9"
+                    data-username="王云子"
+                    data-useravatar="https://blog.wangyunzi.com/avatar.png"
+                    data-userlink="https://wangyunzi.com"
+                    data-tags=""
+                    data-comments-show="false"
+                    data-comments-url="https://s.dusays.com/m/"
+                    data-comments-title="评论"
+                    data-load-more="false"
+                    data-silent="true"
+                ></div>
+            </div>
+        </aside>
+    </div>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+    <div align="center" data-site-start="{{ site.site_start }}">
+      <p>
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+      </p>
+    </div>
+</div>
+
+<script src="https://npm.elemecdn.com/marked/marked.min.js" defer></script>
+<script src="{{ "/assets/js/memos.js" | prepend: site.baseurl }}" defer></script>

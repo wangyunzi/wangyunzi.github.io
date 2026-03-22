@@ -1,0 +1,5 @@
+{% if page.comments %}
+
+<div id="comments" data-url="{{ site.comments.pocketbase_url | default: 'https://pocketbase.wangyunzi.com/api/comment' }}"></div>
+<script type="module" crossorigin src="https://pocketbase.wangyunzi.com/comment.js"></script>
+{% endif %}

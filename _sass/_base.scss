@@ -1,0 +1,221 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  margin-bottom: 1em; /* 确保段落之间有空行 */
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure {
+  margin-bottom: 30px;
+}
+
+/* 分割线 */
+hr {
+  display: block;
+  margin: 0.5em auto;
+  width: max-content;
+  text-align: center;
+  border: none;
+  font-size: 24px;
+  letter-spacing: 10px; /* 调整点之间的距离 */
+  line-height: 1; /* 控制点的垂直居中 */
+}
+
+hr::before {
+  content: "···"; /* 用三个点替换原本的水平线 */
+}
+
+/**
+ * Images
+ */
+img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  vertical-align: middle;
+  width: auto;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+ul,
+ol {
+  margin-left: 30px; /* 调整左边距 */
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0; /* 保持底边距 */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+a:visited {
+  color: var(--color-accent-dark);
+}
+
+a:hover {
+  color: var(--color-text-soft);
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  box-sizing: border-box;
+  margin: 2.5em 0;
+  padding: 0 0 0 50px;
+  font-style: italic;
+  color: #555555;
+  border-left: none;
+  position: relative;
+}
+
+blockquote p {
+  white-space: pre-line;
+}
+
+blockquote::before {
+  content: "“";
+  display: block;
+  font-family: times, sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  color: #444444;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+pre,
+code {
+  background-color: var(--color-code-bg);
+  font-family: var(--font-mono);
+  font-size: 15px;
+}
+
+code {
+  padding: 4px;
+}
+
+pre {
+  margin-left: calc(var(--gutter) * -1);
+  margin-right: calc(var(--gutter) * -1);
+  overflow-x: scroll;
+  padding: 20px var(--gutter);
+  /* 代码块自动换行 */
+  /* white-space: pre-wrap;
+  word-wrap: break-word; */
+}
+
+pre > code {
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(var(--content-width) - (var(--gutter) * 2));
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: calc(var(--content-width) - var(--gutter));
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.icon > svg {
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.icon > svg path {
+  fill: var(--color-text-soft);
+}
+
+iframe[src*="bilibili.com"] {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  margin: 20px 0;
+  display: block;
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-md);
+}

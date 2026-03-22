@@ -1,0 +1,6 @@
+{% if page.twikoo %}
+<div id="tcomment" data-twikoo-env="{{ site.twikoo.env | default: 'https://twikoo.wangyunzi.com/' }}"></div>
+<script src="{{ \"/assets/js/twikoo.all.min.js\" | prepend: site.baseurl }}" defer></script>
+<script src="{{ \"/assets/js/twikoo.js\" | prepend: site.baseurl }}" defer></script>
+<br>
+{% endif %}
