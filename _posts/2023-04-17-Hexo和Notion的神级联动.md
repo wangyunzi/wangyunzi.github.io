@@ -144,7 +144,7 @@ jobs:
   callDepolyTask:
     name: Call the depoly workflow
     needs: notionSyncTask
-    if: ${{ needs.notionSyncTask.outputs.HAS_CHANGES=='true' }}
+    if: {% raw %}${{ needs.notionSyncTask.outputs.HAS_CHANGES=='true' }}{% endraw %}
     uses: wangyunzi/Annie/.github/workflows/hexo_deploy.yml@master # 根据自身Github地址修改即可
 ```
 

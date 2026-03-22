@@ -33,7 +33,7 @@ order: 6
 </div>
 
 <script src="https://blog.wangyunzi.com/json/tags-wall.js" defer></script>
-<script src="{{ \"/assets/js/tags-wall-init.js\" | prepend: site.baseurl }}" defer></script>
+<script src="{{ '/assets/js/tags-wall-init.js' | prepend: site.baseurl }}" defer></script>
 
 #### 🌞建站日记
 - 2024年08月03日  使用jekyll框架，主题[Travelogue](https://github.com/SalGnt/Travelogue)
