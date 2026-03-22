@@ -80,6 +80,11 @@ include:
   - _pages
   - _album
 
+exclude:
+  - GrabLatestRSS
+  - api/_GrabLatestRSS
+  - .DS_Store
+
 # ...
 notion:
   # disables the sync at build stage
