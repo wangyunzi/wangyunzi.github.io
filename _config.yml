@@ -17,6 +17,8 @@ kramdown:
   
 sass:
   sass_dir: _sass
+  load_paths:
+    - _sass
   style: compressed
 
 compress_html:
