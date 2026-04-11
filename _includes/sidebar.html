@@ -9,7 +9,7 @@
         {% assign pages_list = site.pages | sort:"url" %}
         {% for node in pages_list %}
             {% if node.title != null %}
-                {% if node.layout == "page" %}
+                {% if node.layout == "page" and node.title != "瞬间" and node.title != "相册" %}
                 <li class="sb-close {% if page.url == node.url %}active{% endif %}">
                     <a href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
                 </li>
@@ -19,6 +19,19 @@
         </ul>
 
         <div class="site-info">
+            <p>
+                {% for node in pages_list %}
+                    {% if node.title != null and node.layout == "page" and node.title == "瞬间" %}
+                        <a class="sb-close {% if page.url == node.url %}active{% endif %}" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+                    {% endif %}
+                {% endfor %}
+                &nbsp;/&nbsp;
+                {% for node in pages_list %}
+                    {% if node.title != null and node.layout == "page" and node.title == "相册" %}
+                        <a class="sb-close {% if page.url == node.url %}active{% endif %}" href="{{ node.url | prepend: site.baseurl }}">{{ node.title }}</a>
+                    {% endif %}
+                {% endfor %}
+            </p>
             <p>
                 {{ site.name }} &dash; Copyright &copy; {{ site.time | date: '%Y' }}
             </p>
