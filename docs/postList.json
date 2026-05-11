@@ -1,1 +1,1 @@
-{"P1": {"labels": ["bug"], "postTitle": "\u4f60\u597d \u4e16\u754c\ud83d\udc4b", "postUrl": "post/ni-hao-%20-shi-jie-%F0%9F%91%8B.html", "createdDate": "2026-05-11", "dateLabelColor": "#1f883d"}, "labelColorDict": {"bug": "#d73a4a", "documentation": "#0075ca", "duplicate": "#cfd3d7", "enhancement": "#a2eeef", "good first issue": "#7057ff", "help wanted": "#008672", "invalid": "#e4e669", "question": "#d876e3", "wontfix": "#ffffff"}}
+{"labelColorDict": {"about": "#8d9b6c", "documentation": "#0075ca", "enhancement": "#a2eeef", "question": "#d876e3"}}
