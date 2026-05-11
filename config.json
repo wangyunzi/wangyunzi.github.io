@@ -21,7 +21,7 @@
     "dayTheme":"light",
     "nightTheme":"dark_colorblind",
     "urlMode":"pinyin",
-    "style":"<style>#postBody{font-size:20px}</style>",
+    "style":"",
     "script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
     "head":"",
     "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script>",
