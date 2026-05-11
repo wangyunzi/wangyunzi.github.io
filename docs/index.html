@@ -68,7 +68,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
             <path id="music" fill-rule="evenodd"></path>
         </svg>
     </a>
-    
+    <a href="https://wangyunzi.github.io/about.html" class="btn btn-invisible circle" title="关于">
+        <svg class="octicon" width="16" height="16" >
+            <path id="关于" fill-rule="evenodd"></path>
+        </svg>
+    </a>
     <a href="https://wangyunzi.github.io/rss.xml" target="_blank" id="buttonRSS" class="btn btn-invisible circle" title="RSS">
         <svg class="octicon" width="16" height="16" >
             <path id="pathRSS" fill-rule="evenodd"></path>
@@ -84,7 +88,18 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div style="margin-bottom: 16px;">Studying for my life</div>
 <nav class="SideNav border">
-
+<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/ni-hao-%20-shi-jie-%F0%9F%91%8B.html">
+    <div class="d-flex flex-items-center">
+        <svg class="SideNav-icon octicon" style="width:16px;height:16px"><path class="svgTop0" d=""></path>
+        </svg>
+        <span class="listTitle">你好 世界👋</span>
+    </div>
+    <div class="listLabels">
+        
+        <span class="Label LabelName" style="background-color:#a2eeef"><object><a style="color:#fff" href="tag.html#enhancement">enhancement</a></object></span>
+        <span class="Label LabelTime" style="background-color:#4f835e">2026-05-11</span>
+    </div>
+</a>
 </nav>
 </div>
     <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wangyunzi.github.io">Rhea.Blog</a></div>
@@ -152,7 +167,7 @@ for(var i=0;i<iconPost.length;i++){
 
 document.getElementById("music").setAttribute("d",value=IconList["music"]);
 
-
+document.getElementById("关于").setAttribute("d",value=IconList["about"]);
 </script>
 
 
