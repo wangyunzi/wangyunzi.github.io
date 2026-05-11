@@ -12,7 +12,7 @@
     "onePageListNum":15,
     "singlePage":["link","about"],
     "iconList":{},
-    "exlink":{"music":"https://music.meekdai.com"},
+    "exlink":{},
     "commentLabelColor":"#006b75",
     "yearColorList":["#9f6944", "#537daf", "#4f835e", "#9a72aa"],
     "i18n":"CN",
