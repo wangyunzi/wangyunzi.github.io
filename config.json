@@ -8,7 +8,7 @@
     "faviconUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "email":"xueq695@gmail.com",
     "startSite":"5/11/2026",
-    "filingNum":"浙ICP备20023628号",
+    "filingNum":"",
     "onePageListNum":15,
     "singlePage":["about"],
     "iconList":{"music":"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Z"},
@@ -21,8 +21,10 @@
     "dayTheme":"light",
     "nightTheme":"dark_colorblind",
     "urlMode":"pinyin",
-    "style":"",
-    "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
+    "style":"<style>#postBody{font-size:20px}</style>",
+    "script":"<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script>
+    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>
+    <script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>",
     "head":"",
     "allHead":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script>",
     "indexStyle":"",
