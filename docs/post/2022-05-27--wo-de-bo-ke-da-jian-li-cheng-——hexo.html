@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script>
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="
+hexo搭建博客学习经过只是作为自己的经验总结，并不作为教程使用，主要是将博客搭建在github上。">
+<meta property="og:title" content="2022-05-27-我的博客搭建历程——hexo">
+<meta property="og:description" content="
+hexo搭建博客学习经过只是作为自己的经验总结，并不作为教程使用，主要是将博客搭建在github上。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://wangyunzi.github.io/post/2022-05-27--wo-de-bo-ke-da-jian-li-cheng-%E2%80%94%E2%80%94hexo.html">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Meekdai/meekdai.github.io/logo64.jpg">
+<title>2022-05-27-我的博客搭建历程——hexo</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">2022-05-27-我的博客搭建历程——hexo</h1>
+<div class="title-right">
+    <a href="https://wangyunzi.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/wangyunzi/wangyunzi.github.io/issues/8" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>hexo搭建博客学习经过只是作为自己的经验总结，并不作为教程使用，主要是将博客搭建在github上。里面包含自己搭建博客的一些踩的坑，虽然不是很全面，但是可以大概了解。</p>
+
+<h2>前言</h2>
+<p>如果大家想要了解<a href="https://hexo.io/zh-cn/" rel="nofollow">hexo</a>，可以去<a href="https://hexo.io/zh-cn/" rel="nofollow">hexo</a>官方文档看一下,这里主要以纯教程为主。以下的博客搭建主要是在windows下进行，搭建需要<strong>NodeJS</strong>和<a href="https://git-scm.com/downloads" rel="nofollow"><strong>git</strong></a>，强烈推荐在CSDN上搜索就会有一大堆详细的教程，前期还需要准备一个<strong>github</strong>账号，但是对于第一次安装git需要仔细一点，最好找一个全面的教程一步步跟着做，这些我没有写的但是提到的步骤我都会列在我的文末参考资料。</p>
+<h2>实践操作</h2>
+<h3>Github账号</h3>
+<p>创建一个GitHub账号，新建一个仓库，仓库名字一定要写成<em><strong>name.github.io</strong></em>这样的形式，name可以随便改，选择选择public，然后创建仓库。</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0ed45bb4077082f9b88e10b840e8220c521eb07efc938733572284b475c2385a/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f696d6167652d32303232303532373135323533303733352e706e67"><img src="https://camo.githubusercontent.com/0ed45bb4077082f9b88e10b840e8220c521eb07efc938733572284b475c2385a/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f696d6167652d32303232303532373135323533303733352e706e67" alt="image-20220527152530735" data-canonical-src="https://blog.wangyunzi.com/article/image-20220527152530735.png" style="max-width: 100%;"></a></p>
+<h3>安装hexo</h3>
+<p>1.打开电脑终端输入以下代码：</p>
+<div class="highlight highlight-source-go"><pre class="notranslate"><span class="pl-s1">npm</span> <span class="pl-s1">install</span> <span class="pl-c1">-</span><span class="pl-s1">g</span> <span class="pl-s1">hexo</span><span class="pl-c1">-</span><span class="pl-s1">cli</span></pre></div>
+<p>2.查看hexo版本：</p>
+<pre class="notranslate"><code class="notranslate">hexo -v
+</code></pre>
+<p>3.此时创建一个博客，我的博客是安装在D:\Blog下面的，你们也可以选择自己喜欢的目录下进行（myblog博客名称，可以更改）</p>
+<pre class="notranslate"><code class="notranslate">hexo init myblog
+</code></pre>
+<p>4.进入博客</p>
+<pre class="notranslate"><code class="notranslate">cd myblog
+</code></pre>
+<p>5.安装npm</p>
+<pre class="notranslate"><code class="notranslate">npm install
+</code></pre>
+<p>6.生成静态文件</p>
+<pre class="notranslate"><code class="notranslate">hexo g
+</code></pre>
+<p>7.本地测试</p>
+<pre class="notranslate"><code class="notranslate">hexo s
+</code></pre>
+<p>此时一个简单的博客就完成了。</p>
+<h3>安装主题</h3>
+<p>hexo博客官网有很多主题，也可以在github上直接搜索hexo主题 ，可以选择一个你最喜欢，我用的是volantis主题。以下步骤在D:\Blog\myblog下进行</p>
+<p>1.依然是终端打开博客，将主题下载下来</p>
+<pre class="notranslate"><code class="notranslate">git clone https://github.com/xaoxuu/hexo-theme-volantis themes/Volantis
+</code></pre>
+<p>2.安装依赖包</p>
+<pre class="notranslate"><code class="notranslate">npm i -S hexo-generator-search hexo-generator-feed hexo-renderer-less hexo-autoprefixer hexo-generator-json-content hexo-recommended-posts
+</code></pre>
+<p>3.打开博客目录（D:\Blog\myblog）下的配置文件<code class="notranslate">_config.yml</code>,然后找到如下代码：</p>
+<pre class="notranslate"><code class="notranslate">## Themes: https://hexo.io/themes/
+theme: landscape
+</code></pre>
+<p>将landscape改为volantis。</p>
+<p>4.接下来就是艰难的主题修改了，用的啥主题就是看主题文档，看着给的提示修改。</p>
+<h3>部署到Github</h3>
+<p>1.打开上个步骤目录下的配置文件<code class="notranslate">_config.yml</code>，然后找到如下代码修改：</p>
+<pre class="notranslate"><code class="notranslate">deploy:
+  type: git
+  repo: git@github.com:wangyunzi/wangyunzi.github.io.git（仓库地址，如下图）
+  branch: master（分支）
+</code></pre>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/be25eb47946bc551ec038a0d26518fae151e854dfc1dafbdd7809f8ba5433bda/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f312e706e67"><img src="https://camo.githubusercontent.com/be25eb47946bc551ec038a0d26518fae151e854dfc1dafbdd7809f8ba5433bda/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f312e706e67" alt="1" data-canonical-src="https://blog.wangyunzi.com/article/1.png" style="max-width: 100%;"></a></p>
+<p>2.安装插件：</p>
+<pre class="notranslate"><code class="notranslate">npm install hexo-deployer-git --save
+</code></pre>
+<p>3.由于安装git步骤已经跳过，默认你已经安装成功了，本地与远程已经部署好了，所以接下来输入以下清除缓存文件<code class="notranslate">db.json</code>和已生成的静态文件public</p>
+<pre class="notranslate"><code class="notranslate"> hexo clean  
+</code></pre>
+<p>4.生成网站静态文件到默认设置的public文件夹</p>
+<pre class="notranslate"><code class="notranslate">hexo g
+</code></pre>
+<p>5.部署网站到设定的仓库</p>
+<pre class="notranslate"><code class="notranslate">hexo d
+</code></pre>
+<p>6.创建文章</p>
+<pre class="notranslate"><code class="notranslate">hexo new post 第一篇文章
+</code></pre>
+<p>输入以上代码就会发现在source文件夹下的post里面就会有“第一篇文章”这个md文件，编写内容。</p>
+<p>7.提交文章和部署到文章差不多，依次输入下面的代码：</p>
+<pre class="notranslate"><code class="notranslate">hexo clean
+hexo g
+hexo d
+</code></pre>
+<p>到此，博客就布置的差不多啦。</p>
+<h3>部署到github和vercel</h3>
+<p>由于后来安装的博客越来越多，发现继续使用name.github.io这个行不通了，具体原理我也说不通，后来虽然我发现也可以布置两个这样的博客，但是有点复杂，就果断选择放弃了，于是选择将文件push到github上，然后github与vercel链接，这样vercel就会给你一个类似name.vercel.app这样的免费域名，在vercel上你可以拥有无数个博客，这也是我后来逐渐喜欢上vercel的原因，最后我发现可以不push到github上，直接push到vercel上，这也是一个非常不错的办法，在我末尾的参考文献可以找到。（此部分可以选择看或不看）</p>
+<p>1.同样，新建一个博客，可以私密也可以公开，我建议最好设置成私密的。</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ab4e5b484069a04ac0f2824dad01599c6080654bb60b838eb54ad8486b4ec906/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f322e6a7067"><img src="https://camo.githubusercontent.com/ab4e5b484069a04ac0f2824dad01599c6080654bb60b838eb54ad8486b4ec906/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f322e6a7067" alt="2" data-canonical-src="https://blog.wangyunzi.com/article/2.jpg" style="max-width: 100%;"></a></p>
+<p>2.初始化博客，然后你就会发现博客目录下多了一个<code class="notranslate">.git</code>文件</p>
+<pre class="notranslate"><code class="notranslate">git init
+</code></pre>
+<p>3.接着输入一下代码，这是第一次push到仓库的步骤：</p>
+<pre class="notranslate"><code class="notranslate">git add ..
+git commit -m "first commit"
+git remote add origin git@github.com:wangyunzi/a.git
+git branch -M master
+git push -u origin master
+</code></pre>
+<p>git remote部分输入自己的仓库ssh，就是前面步骤提到的那个，“first commit”可以改成其他的，这个表示提交名称，提交之后会在仓库上看到。</p>
+<p>4.如果以后修改博客或是提交文章就可以直接输入以下步骤：</p>
+<pre class="notranslate"><code class="notranslate">hexo clean
+hexo g
+git add ..
+git commit -m "first commit"
+git branch -M master
+git push -u origin master
+</code></pre>
+<p>5.上面我们已经将博客push到github上保存好了，接下来就直接和vercel连接起来，登录的时候就用github的账号登录这样方便快捷一点，然后新建一个项目：</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/fd79a100f70340ac7a5a59bed8fd50221eea01beefbab5b3f964005bbc8412bc/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f332e6a7067"><img src="https://camo.githubusercontent.com/fd79a100f70340ac7a5a59bed8fd50221eea01beefbab5b3f964005bbc8412bc/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f332e6a7067" alt="3" data-canonical-src="https://blog.wangyunzi.com/article/3.jpg" style="max-width: 100%;"></a></p>
+<p>6.导入我们刚刚创建的github博客</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9d98147b9e3c1ab24319ff74f13fb200b03114176d18f13cd7d2b9ea701caa2f/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f342e6a7067"><img src="https://camo.githubusercontent.com/9d98147b9e3c1ab24319ff74f13fb200b03114176d18f13cd7d2b9ea701caa2f/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f342e6a7067" alt="4" data-canonical-src="https://blog.wangyunzi.com/article/4.jpg" style="max-width: 100%;"></a></p>
+<p>7.填写名称，这个名称就是你网址前面部分名字，比如我的博客网址yunzi.vercel.app在vercel上的项目名称就是yunzi，然后deploy，稍等几分钟就会出现一个页面写着congratulation，说明成功了，回到项目主页：</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/127154b66353e8c993749686f1de69778abe03d721f3e0f81b9e8f015cf20603/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f352e6a7067"><img src="https://camo.githubusercontent.com/127154b66353e8c993749686f1de69778abe03d721f3e0f81b9e8f015cf20603/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f352e6a7067" alt="5" data-canonical-src="https://blog.wangyunzi.com/article/5.jpg" style="max-width: 100%;"></a></p>
+<p>8.打开网址看一下，这样以后别人打开你的这个网址就看到你的博客啦：</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/93e3e2eb68038dc1e968d8135d0676c8d34545093df04e03978d57a685d1b61f/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f362e6a7067"><img src="https://camo.githubusercontent.com/93e3e2eb68038dc1e968d8135d0676c8d34545093df04e03978d57a685d1b61f/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f362e6a7067" alt="6" data-canonical-src="https://blog.wangyunzi.com/article/6.jpg" style="max-width: 100%;"></a></p>
+<h3>直接部署到vercel</h3>
+<p>虽然在参考文献里面已经有了一篇比较完整的文章了，但是我在按照步骤进行的时候还是出现了一点小问题，主要是我实际操作和他的有一些不一样，所以我来捋顺一下我的整个步骤，为此我新开了一篇hexo博客演示😂😂。</p>
+<p>1.首先安装vercel</p>
+<pre class="notranslate"><code class="notranslate">npm install -g vercel 
+</code></pre>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f4c8186e433e971133d9b90c2e50e0ec78ad4993dc292c0f8864b271d1c91ce1/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f372e6a7067"><img src="https://camo.githubusercontent.com/f4c8186e433e971133d9b90c2e50e0ec78ad4993dc292c0f8864b271d1c91ce1/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f372e6a7067" alt="7" data-canonical-src="https://blog.wangyunzi.com/article/7.jpg" style="max-width: 100%;"></a></p>
+<p>2.生成hexo静态文件</p>
+<pre class="notranslate"><code class="notranslate">hexo g
+</code></pre>
+<p>3.按照教程是要求到public下进行的，但是我那样操作后有错误，所以直接在博客目录下进行以下步骤即可，输入代码：</p>
+<pre class="notranslate"><code class="notranslate">vercel
+</code></pre>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/46c81462fe86b74c39ad38e7dace3f1759fcbf40dbeee7376924fc9889d1ee28/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f382e6a7067"><img src="https://camo.githubusercontent.com/46c81462fe86b74c39ad38e7dace3f1759fcbf40dbeee7376924fc9889d1ee28/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f382e6a7067" alt="8" data-canonical-src="https://blog.wangyunzi.com/article/8.jpg" style="max-width: 100%;"></a></p>
+<p>直接点击<strong>enter</strong>，因为前面我们是使用github登录的，我没使用过下面几个选项，想尝试的可以尝试，接着就会在浏览器出现让你使用github账户登录的页面，有些可能不会出现，接着就会出现：</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/039a4c6634516d5effcb5ef807abfb43900a42d84abf459d078061061f96af2a/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f392e6a7067"><img src="https://camo.githubusercontent.com/039a4c6634516d5effcb5ef807abfb43900a42d84abf459d078061061f96af2a/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f392e6a7067" alt="9" data-canonical-src="https://blog.wangyunzi.com/article/9.jpg" style="max-width: 100%;"></a></p>
+<p>慢慢分析这些代码，success表示用github登录成功，然后询问你是否需要将本地博客文件test上传，直接点击enter，会询问你是否想上传到你的vercel账户，wangyunzi是我的vercel账户名称，是否上传已经有的vercel项目，因为我没有在vercel上建过这个项目，我就直接填一个n（NO)，如果你已经建立了，就还是继续enter，项目名称是什么，就和我们上面那个步骤一样，网址的名称，接下来一直enter，稍等一会儿：</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f894789455cfbead3a06e6642abb3d8f25afd82ea9de275ccbf7867eb3c3a06e/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f31302e6a7067"><img src="https://camo.githubusercontent.com/f894789455cfbead3a06e6642abb3d8f25afd82ea9de275ccbf7867eb3c3a06e/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f31302e6a7067" alt="10" data-canonical-src="https://blog.wangyunzi.com/article/10.jpg" style="max-width: 100%;"></a></p>
+<p>这张图片就表示我已经上传成功了，然后我们在我们的vercel页面来看看：</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/e1a588922b47c39b261f6f1e066a0bda674cb4dc9246265a1654c8b0022f1f6a/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f31312e6a7067"><img src="https://camo.githubusercontent.com/e1a588922b47c39b261f6f1e066a0bda674cb4dc9246265a1654c8b0022f1f6a/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f31312e6a7067" alt="11" data-canonical-src="https://blog.wangyunzi.com/article/11.jpg" style="max-width: 100%;"></a></p>
+<p>看来我的博客已经成功了哈，点击链接进去看就是我的博客啦！</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/5324f17e2502482acd01132a8a32838f62d6a097e06f82d4ed47c4b58743c289/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f31322e6a7067"><img src="https://camo.githubusercontent.com/5324f17e2502482acd01132a8a32838f62d6a097e06f82d4ed47c4b58743c289/68747470733a2f2f626c6f672e77616e6779756e7a692e636f6d2f61727469636c652f31322e6a7067" alt="12" data-canonical-src="https://blog.wangyunzi.com/article/12.jpg" style="max-width: 100%;"></a></p>
+<p>4.依次输入以下代码发表文章：</p>
+<pre class="notranslate"><code class="notranslate">hexo cl 
+hexo g 
+vercel --prod --confirm 
+</code></pre>
+<h2>总结</h2>
+<p>以上差不多就是我一整个hexo搭建博客的历程，虽然现在自己操作这些流程非常顺畅没遇到啥问题，但是像当初的我只要做一个步骤就会出现一个错误，一连串报错常常让我措手不及，浏览器打开的网页比我写论文时打开的网页都还要多😪，真真就是“一把辛酸泪”。接下来还是会慢慢记述自己用hugo搭建博客和notion搭建博客的历程。其实对于我自己来说，弄这些博客的步骤都是比较混乱的一个状态，都是出现一个错误然后上网搜索一个错误，没有正常、完整的步骤，所以现在也算是一个复盘的过程，以便于自己日后若是忘记了也可以回顾一下。最后想对自己说，你慢慢回去删除那些因为需要演示建立的仓库以及截图的样子真美，写完一篇文章，桌面上布满了截图。</p>
+<blockquote>
+<p>See you later!</p>
+</blockquote></div>
+<div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://wangyunzi.github.io">Rhea.Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("5/11/2026"!=""){
+    var startSite=new Date("5/11/2026");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","wangyunzi/wangyunzi.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script async src='//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+
+</html>
