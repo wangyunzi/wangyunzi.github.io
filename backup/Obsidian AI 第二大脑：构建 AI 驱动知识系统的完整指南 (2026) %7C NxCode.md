@@ -55,6 +55,46 @@ mindmap
       Offline data
 ```
 
+# Obsidian AI Brain
+
+```mermaid
+graph TD
+    Root(Obsidian AI Brain) --> CV(Core Value)
+    CV --> CV1(Local first)
+    CV --> CV2(Markdown files)
+    CV --> CV3(Model choice)
+    CV --> CV4(Privacy focus)
+
+    Root --> AP(AI Plugins)
+    AP --> AP1(Smart Connections)
+    AP --> AP2(Copilot)
+    AP --> AP3(Nova Second Brain)
+    AP --> AP4(Claude MCP)
+
+    Root --> RN(Read notes)
+    RN --> RN1(Search vault)
+    RN --> RN2(Edit notes)
+    RN --> RN3(Create notes)
+    RN --> RN4(Context)
+
+    Root --> DE(Design)
+    DE --> DE1(Good names)
+    DE --> DE2(Rich metadata)
+    DE --> DE3(Atomic notes)
+    DE --> DE4(Wiki links)
+    DE --> DE5(Clear tags)
+
+    Root --> WF(Workflows)
+    WF --> WF1(Weekly review)
+    WF --> WF2(Research synthesis)
+    WF --> WF3(Meeting prep)
+    WF --> WF4(Code docs)
+
+    Root --> NF(New Features)
+    NF --> NF1(Bases views)
+    NF --> NF2(Offline data)
+```
+
 ## Notable Quotes
 
 - “你的笔记变成了一个 AI 可以阅读、搜索和推理的知识库。”
